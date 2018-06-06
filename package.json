@@ -36,5 +36,8 @@
   "bugs": {
     "url": "https://github.com/Ralej86/Lordbnb/issues"
   },
-  "homepage": "https://github.com/Ralej86/Lordbnb#readme"
+  "homepage": "https://github.com/Ralej86/Lordbnb#readme",
+  "devDependencies": {
+    "webpack-cli": "^3.0.2"
+  }
 }
