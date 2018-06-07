@@ -50,7 +50,7 @@ class SignupForm extends React.Component {
                 value={this.state.name}
                 onChange={this.update('name')}
                 className="session-input"
-                placeholder="Name"
+                placeholder="  Name"
                 />
             </label>
             <br/>
@@ -59,7 +59,7 @@ class SignupForm extends React.Component {
                 value={this.state.email}
                 onChange={this.update('email')}
                 className="session-input"
-                placeholder="Email"
+                placeholder="  Email"
                 />
             </label>
             <br/>
@@ -68,7 +68,7 @@ class SignupForm extends React.Component {
                 value={this.state.password}
                 onChange={this.update('password')}
                 className="session-input"
-                placeholder="Password"
+                placeholder=" Password"
                 />
             </label>
             <br/>
