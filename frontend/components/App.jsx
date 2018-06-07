@@ -1,14 +1,14 @@
 import React from 'react';
 
-import GreetingContainer from './greeting/greeting_container';
+import NavbarContainer from './navbar/navbar_container';
 import Modal from './modal/modal';
 
 const App = () => (
   <div>
     <Modal />
     <header>
-      <h1>Lord BnB</h1>
-      <GreetingContainer />
+      <h1= "header logo">Lord BnB</h1>
+      <NavbarContainer />
     </header>
   </div>
 );

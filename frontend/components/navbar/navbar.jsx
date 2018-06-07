@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Greeting = ({ currentUser, logout, openModal, demoLogin }) => {
+const Navbar = ({ currentUser, logout, openModal, demoLogin }) => {
 
   const noUserPresent = () => (
     <nav className="login-signup">
@@ -23,4 +23,4 @@ const Greeting = ({ currentUser, logout, openModal, demoLogin }) => {
   return currentUser ? userLoggedIn() : noUserPresent();
 };
 
-export default Greeting;
+export default Navbar;

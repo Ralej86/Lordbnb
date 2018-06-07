@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import Greeting from './greeting';
+import Navbar from './navbar';
 import { logout, login } from '../../actions/session_actions';
 import { openModal } from '../../actions/modal_actions'
 
@@ -14,4 +14,4 @@ const mapDispatchToProps = dispatch => ({
   demoLogin: () => dispatch(login({email:"guest@sample.com", password:"password"}))
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Greeting);
+export default connect(mapStateToProps, mapDispatchToProps)(Navbar);
