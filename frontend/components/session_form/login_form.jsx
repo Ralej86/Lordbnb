@@ -36,20 +36,20 @@ class LoginForm extends React.Component {
 
   render() {
     return (
-      <div className="login-form-container">
-        <form onSubmit={this.handleSubmit} className="login-form-box">
+      <div className="session-form-container">
+        <form onSubmit={this.handleSubmit} className="session-form-box">
           Welcome to the site, ya dig?
           <br/>
           {this.props.formType} or {this.props.otherForm}
           <div onClick={this.props.closeModal} className="close-x">X</div>
           {this.renderErrors()}
-          <div className="login-form">
+          <div className="session-form">
 
             <label>Email:
               <input type="text"
                 value={this.state.email}
                 onChange={this.update('email')}
-                className="login-input"
+                className="session-input"
                 />
             </label>
             <br/>
@@ -57,7 +57,7 @@ class LoginForm extends React.Component {
               <input type="password"
                 value={this.state.password}
                 onChange={this.update('password')}
-                className="login-input"
+                className="session-input"
                 />
             </label>
             <br/>

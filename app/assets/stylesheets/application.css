@@ -25,8 +25,23 @@
 }
 
 .modal-form {
+  display: flex;
+  border: 1px solid black;
+  background: white;
+  width: 31%;
+  height: 55%;
+  padding: 10px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.session-form-container {
+  margin: auto;
+}
+
+.session-form-box {
+  font: 20px;
+  
 }
