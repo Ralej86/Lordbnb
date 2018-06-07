@@ -34,6 +34,15 @@ class SignupForm extends React.Component {
     );
   }
 
+  // <label>
+  //   <input type="text"
+  //     value={this.state.name}
+  //     onChange={this.update('name')}
+  //     className="session-input"
+  //     placeholder="  Name"
+  //     />
+  // </label>
+
   render() {
     return (
       <div className="session-form-container">
@@ -45,14 +54,7 @@ class SignupForm extends React.Component {
           <br/>
           {this.renderErrors()}
           <div className="session-form">
-            <label>
-              <input type="text"
-                value={this.state.name}
-                onChange={this.update('name')}
-                className="session-input"
-                placeholder="  Name"
-                />
-            </label>
+
             <br/>
             <label>
               <input type="text"
