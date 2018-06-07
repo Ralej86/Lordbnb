@@ -38,7 +38,7 @@ class LoginForm extends React.Component {
     return (
       <div className="session-form-container">
         <form onSubmit={this.handleSubmit} className="session-form-box">
-          <span class="badge" onClick={this.props.closeModal} className="close-x">X</span>
+          <span className="badge" onClick={this.props.closeModal} className="close-x">X</span>
           <br/>
           <br/>
           Welcome to the site, ya dig?
