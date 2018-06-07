@@ -1,0 +1,35 @@
+.header {
+  height: 80px;
+  border-bottom: 1px solid #ccc;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.header-nav-logo img {
+  position: relative;
+  top: -15%;
+}
+
+.header-nav-logo:hover {
+  background: grey;
+}
+
+
+.header-nav-title {
+  position: relative;
+  top: 40%;
+  right: 28%;
+  height: 20px;
+}
+
+.login-signup {
+  position: relative;
+  top: 50%:
+  left: 50%;
+}

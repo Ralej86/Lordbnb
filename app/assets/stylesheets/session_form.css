@@ -1,0 +1,95 @@
+.session-form-container {
+  width: 100%;
+}
+
+.session-form-box {
+  font: 20px;
+  height: 90%;
+}
+
+.session-form-box span {
+  color: grey;
+  background: white;
+  border-radius: 50%;
+  padding: 2px 5px;
+  box-shadow: 0 0 1px;
+}
+
+.session-form label {
+  font-family: sans-serif;
+  color: grey;
+}
+
+.session-form label input {
+  font-size: 18px;
+  display: block;
+  width: 95%;
+  height: 50px;
+  margin: 5px;
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding-left: 8px;
+}
+
+.session-form button {
+  font-weight: bold;
+  background: #4267b2;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  border: 1px solid #4267b2;
+  border-radius: 5px;
+}
+
+.login-signup button {
+  color: white;
+  background-color: #4267b2;
+  border-color: #4267b2;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.login-signup button:hover {
+  cursor: pointer;
+  background-color: lightblue;
+  border-color: lightblue;
+}
+
+.logout button {
+  color: white;
+  background-color: #4267b2;
+  border-color: #4267b2;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.logout button:hover {
+  cursor: pointer;
+  background-color: lightblue;
+  border-color: lightblue;
+}
+
+.session-form button:hover {
+  cursor: pointer;
+  background-color: lightblue;
+}
+
+.session-submit {
+  font-weight: bold;
+  background: red;
+  color: white;
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+.session-submit:hover {
+  cursor: pointer;
+}
+
+.close-x:hover {
+  cursor: pointer;
+}

@@ -10,123 +10,12 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
  *= require_self
  */
 
-.modal-background {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 2;
-}
+@import 'reset.css';
 
-.modal-form {
-  position: absolute;
-  top: 100px;
-  left: 50%;
-  margin-left: -220px;
-  width: 500px;
-  height: 500px;
-  padding: 20px;
-  background: #fff;
-  z-index: 3;
-  border: 1px solid black;
-}
 
-.session-form-container {
-  width: 100%;
-}
-
-.session-form-box {
-  font: 20px;
-}
-
-.session-form-box span {
-  color: grey;
-  background: white;
-  border-radius: 50%;
-  padding: 2px 5px;
-  box-shadow: 0 0 1px;
-}
-
-.session-form label {
-  font-family: sans-serif;
-  color: grey;
-}
-
-.session-form label input {
-  font-size: 18px;
-  display: block;
-  width: 95%;
-  height: 50px;
-  margin: 5px;
-  border: 1px solid grey;
-  border-radius: 3px;
-  padding-left: 8px;
-}
-
-.session-form button {
-  font-weight: bold;
-  background: #4267b2;
-  color: #fff;
-  width: 100%;
-  height: 50px;
-  margin-top: 10px;
-  border: 1px solid #4267b2;
-  border-radius: 5px;
-}
-
-.login-signup button {
-  color: white;
-  background-color: #4267b2;
-  border-color: #4267b2;
-  border-radius: 5px;
-  padding: 8px;
-}
-
-.login-signup button:hover {
-  cursor: pointer;
-  background-color: lightblue;
-  border-color: lightblue;
-}
-
-.logout button {
-  color: white;
-  background-color: #4267b2;
-  border-color: #4267b2;
-  border-radius: 5px;
-  padding: 8px;
-}
-
-.logout button:hover {
-  cursor: pointer;
-  background-color: lightblue;
-  border-color: lightblue;
-}
-
-.session-form button:hover {
-  cursor: pointer;
-}
-
-.session-submit {
-  font-weight: bold;
-  background: red;
-  color: white;
-  width: 100%;
-  height: 50px;
-  margin-top: 20px;
-  border: 1px solid red;
-  border-radius: 5px;
-}
-
-.session-submit:hover {
-  cursor: pointer;
-}
-
-.close-x:hover {
-  cursor: pointer;
-}
+@import 'modal.css';
+@import 'session_form.css';
+@import 'navbar.css'
