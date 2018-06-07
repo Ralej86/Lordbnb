@@ -38,34 +38,37 @@ class SignupForm extends React.Component {
     return (
       <div className="session-form-container">
         <form onSubmit={this.handleSubmit} className="session-form-box">
+          <span class="badge" onClick={this.props.closeModal} className="close-x">X</span>
+          <br/>
+          <br/>
           Welcome to the site, ya dig?
           <br/>
-          {this.props.formType} or {this.props.otherForm}
-          <div onClick={this.props.closeModal} className="close-x">X</div>
           {this.renderErrors()}
           <div className="session-form">
-
-            <label>Name:
+            <label>
               <input type="text"
                 value={this.state.name}
                 onChange={this.update('name')}
                 className="session-input"
+                placeholder="Name"
                 />
             </label>
             <br/>
-            <label>Email:
+            <label>
               <input type="text"
                 value={this.state.email}
                 onChange={this.update('email')}
                 className="session-input"
+                placeholder="Email"
                 />
             </label>
             <br/>
-            <label>Password:
+            <label>
               <input type="password"
                 value={this.state.password}
                 onChange={this.update('password')}
                 className="session-input"
+                placeholder="Password"
                 />
             </label>
             <br/>
@@ -73,6 +76,7 @@ class SignupForm extends React.Component {
               type="submit"
               value={this.props.formType}
               />
+              {this.props.otherForm}
           </div>
         </form>
       </div>
