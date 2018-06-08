@@ -6,11 +6,13 @@ class LocationIndex extends React.Component {
   }
 
   render() {
-    const { locations, loading } = this.props;
+    const { locations } = this.props;
 
     return (
-      <div className="Location">
-        <ul>
+      <div className="location-cont">
+        <h1 className="location-cont-title">Homes Around Middle Earth</h1>
+        <br />
+        <ul className="location-cont-index"->
           (locations.map(location => <LocationIndexItem key={location.id} location={location} />))
         </ul>
       </div>
