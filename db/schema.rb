@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 2018_06_08_052638) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["name"], name: "index_locations_on_name", unique: true
-    t.index ["user_id"], name: "index_locations_on_user_id", unique: true
+    t.index ["user_id"], name: "index_locations_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
