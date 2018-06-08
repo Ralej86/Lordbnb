@@ -3,10 +3,12 @@ import React from 'react';
 import NavbarContainer from './navbar/navbar_container';
 import Modal from './modal/modal';
 import { Link } from 'react-router-dom';
+import Footer from './footer/footer';
 
 const App = () => (
   <div>
     <Modal />
+
     <header className="header">
       <nav className="header-nav">
         <div className="header-nav-left">
@@ -20,6 +22,10 @@ const App = () => (
         <NavbarContainer />
       </nav>
     </header>
+
+    <footer>
+      <Footer />
+    </footer>
   </div>
 );
 

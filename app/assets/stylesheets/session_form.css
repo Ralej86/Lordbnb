@@ -28,11 +28,12 @@
   font-weight: bold;
   background: #4267b2;
   color: #fff;
-  width: 100%;
+  width: 60%;
   height: 50px;
   margin-top: 10px;
   border: 1px solid #4267b2;
   border-radius: 5px;
+  padding-left: 40%;
 }
 
 .login-signup button {
@@ -66,21 +67,25 @@
 .session-form button:hover {
   cursor: pointer;
   background-color: lightblue;
+  border-color: lightblue;
 }
 
 .session-submit {
   font-weight: bold;
   background: red;
   color: white;
-  width: 100%;
+  width: 60%;
   height: 50px;
   margin-top: 20px;
   border: 1px solid red;
   border-radius: 5px;
+  padding-left: 40%;
 }
 
 .session-submit:hover {
   cursor: pointer;
+  background-color: #ff8080;
+  border-color: #ff8080;
 }
 
 .close-x:hover {
