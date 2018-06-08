@@ -1,4 +1,4 @@
-export const gethLocations = () => (
+export const getLocations = () => (
   $.ajax({
     method: 'GET',
     url: '/api/locations'

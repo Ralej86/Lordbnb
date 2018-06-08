@@ -13,13 +13,11 @@ class Api::LocationsController < ApplicationController
   def create
     @location = Location.new(location_params)
     @location.user_id = current_user.id
-    debugger
-    if @location.save!
+    if @location.save
       render :show
     else
       render json: @location.errors.full_messages, status: 422
     end
-  end
   end
 
   private
