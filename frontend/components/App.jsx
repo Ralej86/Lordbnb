@@ -2,8 +2,10 @@ import React from 'react';
 
 import NavbarContainer from './navbar/navbar_container';
 import Modal from './modal/modal';
-import { Link } from 'react-router-dom';
+import { Link, Route, Switch } from 'react-router-dom';
 import Footer from './footer/footer';
+import LocationIndexContainer from './location/location_index_container'
+
 
 const App = () => (
   <div>
@@ -22,6 +24,16 @@ const App = () => (
         <NavbarContainer />
       </nav>
     </header>
+
+
+    <Switch>
+      <Route exact path="/locations" component={ LocationIndexContainer } />
+    </Switch>
+
+
+
+
+
 
     <footer>
       <Footer />

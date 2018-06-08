@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
-import locationIndex from './location_index';
+import LocationIndex from './location_index';
 import { fetchLocations } from '../../actions/location_actions'
 
 const mapStateToProps = state => ({
-  locations: state.locations
+  locations: Object.values(state.entities.locations)
 });
 
 const mapDispatchToProps = dispatch => ({
