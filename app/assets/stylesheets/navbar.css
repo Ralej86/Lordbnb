@@ -1,4 +1,5 @@
 .header {
+  font-family: 'Cinzel', serif;
   height: 80px;
   border-bottom: 1px solid #ccc;
 }
@@ -12,23 +13,38 @@
 }
 
 .header-nav-logo img {
-  position: relative;
-  top: -15%;
+  height: 80px;
+  width: 200px;
 }
-
-.header-nav-logo:hover {
-  background: grey;
-}
-
 
 .header-nav-title {
-  position: relative;
-  top: 40%;
-  right: 28%;
-  height: 20px;
+  display: block;
 }
 
+.header-nav-left {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  top: 0;
+}
+
+
 .login-signup {
+  display: flex;
   position: relative;
-  top: 50%;
+  top: 35%;
+  right: 2%;
+  height:53px;
+}
+
+.login-signup li:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #484848;
+}
+
+.logout {
+  font-size: 18px;
+  position: relative;
+  top: 20%;
+  right: 5%;
 }

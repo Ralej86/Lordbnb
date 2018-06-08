@@ -4,10 +4,15 @@ class SignupForm extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
+      name: "",
       email: "",
       password: ""
     }
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  componentWillUnmount() {
+    this.props.clearErrors();
   }
 
   update(field) {
@@ -34,27 +39,21 @@ class SignupForm extends React.Component {
     );
   }
 
-  // <label>
-  //   <input type="text"
-  //     value={this.state.name}
-  //     onChange={this.update('name')}
-  //     className="session-input"
-  //     placeholder="  Name"
-  //     />
-  // </label>
-
   render() {
     return (
       <div className="session-form-container">
         <form onSubmit={this.handleSubmit} className="session-form-box">
-          <span className="badge" onClick={this.props.closeModal} className="close-x">X</span>
-          <br/>
-          <br/>
-          Welcome to the site, ya dig?
-          <br/>
+          <div onClick={this.props.closeModal} className="close-x">X</div>
           {this.renderErrors()}
           <div className="session-form">
-
+            <label>
+              <input type="text"
+                value={this.state.name}
+                onChange={this.update('name')}
+                className="session-input"
+                placeholder="  Name"
+                />
+            </label>
             <br/>
             <label>
               <input type="text"

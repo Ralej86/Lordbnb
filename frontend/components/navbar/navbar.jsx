@@ -4,11 +4,11 @@ const Navbar = ({ currentUser, logout, openModal, demoLogin }) => {
 
   const noUserPresent = () => (
     <ul className="login-signup">
-      <button onClick={() => openModal('login')}>Login</button>
+      <li><div onClick={() => openModal('login')}>Login</div></li>
       &nbsp;&nbsp;&nbsp;&nbsp;
-      <button onClick={() => openModal('signup')}>Sign Up</button>
+      <li><div onClick={() => openModal('signup')}>Sign Up</div></li>
       &nbsp;&nbsp;&nbsp;&nbsp;
-      <button onClick={() => demoLogin()}>Demo Login</button>
+      <li><div onClick={() => demoLogin()}>Demo Login</div></li>
     </ul>
   );
 

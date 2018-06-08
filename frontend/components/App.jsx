@@ -9,13 +9,14 @@ const App = () => (
     <Modal />
     <header className="header">
       <nav className="header-nav">
-        <Link className ="header-nav-logo" to="/">
-          <img src="https://vignette.wikia.nocookie.net/logopedia/images/5/5e/Nav-open-logo-lotr.png/revision/latest?cb=20160921000347"
-            alt="LOTR-logo"></img>
-        </Link>
+        <div className="header-nav-left">
+          <Link className ="header-nav-logo" to="/">
+            <img src="https://vignette.wikia.nocookie.net/logopedia/images/5/5e/Nav-open-logo-lotr.png/revision/latest?cb=20160921000347"
+              alt="LOTR-logo"></img>
+          </Link>
 
-        <Link to="/" className="header-nav-title">Lord BnB</Link>
-
+          <Link to="/" className="header-nav-title">Lord BnB</Link>
+        </div>
         <NavbarContainer />
       </nav>
     </header>

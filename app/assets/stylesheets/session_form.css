@@ -1,18 +1,11 @@
 .session-form-container {
+  font-family: 'Cinzel', serif;
   width: 100%;
 }
 
 .session-form-box {
   font: 20px;
   height: 90%;
-}
-
-.session-form-box span {
-  color: grey;
-  background: white;
-  border-radius: 50%;
-  padding: 2px 5px;
-  box-shadow: 0 0 1px;
 }
 
 .session-form label {

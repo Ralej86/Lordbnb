@@ -10,6 +10,10 @@ class LoginForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  componentWillUnmount() {
+    this.props.clearErrors()
+  }
+
   update(field) {
     return e => this.setState({
       [field]: e.currentTarget.value
@@ -40,8 +44,6 @@ class LoginForm extends React.Component {
         <form onSubmit={this.handleSubmit} className="session-form-box">
           <span className="badge" onClick={this.props.closeModal} className="close-x">X</span>
           <br/>
-          <br/>
-          Welcome to the site, ya dig?
           <br/>
           {this.renderErrors()}
           <div className="session-form">
