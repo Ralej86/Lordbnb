@@ -1,29 +1,24 @@
-body {
-  height: 100%;
-  width: 100%;
-  background-image: url("http://www.theonering.net/torwp/wp-content/uploads/2013/07/lord-of-the-rings-fellowship-of-the-ring-the-silhouettes.jpg");
-  z-index: 10;
+
+.rootDiv {
+  height:100%;
+  width:100%;
 }
 
-header {
-  background: white;
+.background {
+  position: relative;
 }
 
-.footer {
-  display: flex;
-  justify-content:flex-end;
-  position: fixed;
-  right: 1%;
-  bottom: 1%;
-  width: 15;
-  height: 25px;
-  background-color: white;
-  text-align: center;
-  border: 1px solid black;
-  border-radius: 5px;
+.background-image {
+  position:absolute;
+  height: 100vh;
 }
 
-.footer p {
-  margin: auto;
-  padding: 5px;
+.background p {
+  position: absolute;
+  bottom: 55%;
+  left: 35%;
+  color:inherit;
+  font-family: 'Cinzel', serif;
+  font-size: 26px;
+  border-radius: 50%;
 }

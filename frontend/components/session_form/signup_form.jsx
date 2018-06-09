@@ -44,8 +44,10 @@ class SignupForm extends React.Component {
       <div className="session-form-container">
         <form onSubmit={this.handleSubmit} className="session-form-box">
           <div onClick={this.props.closeModal} className="close-x">X</div>
-          {this.renderErrors()}
           <div className="session-form">
+            <div className='session-form-errors'>
+              {this.renderErrors()}
+            </div>
             <label>
               <input type="text"
                 value={this.state.name}

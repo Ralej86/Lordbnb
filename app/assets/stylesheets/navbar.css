@@ -13,7 +13,7 @@
 }
 
 .header-nav-logo img {
-  height: 80px;
+  height: 170px;
   width: 200px;
 }
 
@@ -43,8 +43,10 @@
 }
 
 .logout {
-  font-size: 18px;
-  position: relative;
-  top: 20%;
-  right: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.logout-item {
+  margin-right: 10px;
 }

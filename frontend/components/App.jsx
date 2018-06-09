@@ -4,27 +4,29 @@ import NavbarContainer from './navbar/navbar_container';
 import Modal from './modal/modal';
 import { Link, Route, Switch } from 'react-router-dom';
 import Footer from './footer/footer';
-import LocationIndexContainer from './location/location_index_container'
+import LocationIndexContainer from './location/location_index_container';
+import SplashPage from './splash_page/splash_page';
 
 
 const App = () => (
-  <div>
+  <div className="rootDiv">
     <Modal />
 
     <header className="header">
       <nav className="header-nav">
         <div className="header-nav-left">
-          <Link className ="header-nav-logo" to="/">
+          <Link className ="header-nav-logo" to="/locations">
             <img src="https://vignette.wikia.nocookie.net/logopedia/images/5/5e/Nav-open-logo-lotr.png/revision/latest?cb=20160921000347"
               alt="LOTR-logo"></img>
           </Link>
 
-          <Link to="/" className="header-nav-title">Lord BnB</Link>
+          <Link to="/locations" className="header-nav-title">Lord BnB</Link>
         </div>
         <NavbarContainer />
       </nav>
     </header>
 
+    <Route exact path="/" component={ SplashPage } />
 
     <Switch>
       <Route exact path="/locations" component={ LocationIndexContainer } />

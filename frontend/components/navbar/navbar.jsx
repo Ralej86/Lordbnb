@@ -14,8 +14,8 @@ const Navbar = ({ currentUser, logout, openModal, demoLogin }) => {
 
   const userLoggedIn = () => (
     <nav className = "logout">
-      <h2> Welcome, {currentUser.name} </h2>
-      <button onClick={logout}>Log Out</button>
+      <h2 className="logout-item"> Welcome, {currentUser.name} </h2>
+      <button className="logout-item" onClick={logout}>Log Out</button>
     </nav>
   );
 

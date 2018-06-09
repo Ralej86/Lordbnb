@@ -91,3 +91,9 @@
 .close-x:hover {
   cursor: pointer;
 }
+
+.session-form-errors {
+  height: 50px;
+  width: 80%;
+  font-size: 14px;
+}
