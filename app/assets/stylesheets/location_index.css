@@ -1,0 +1,56 @@
+.location-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 100%;
+  padding: 3%;
+  font-family: 'Cinzel', serif;
+  border: 1px solid red;
+  /*  delete the border when done styling */
+}
+
+/*  Selection below can be deleted, used to identify the div*/
+.location-cont-title {
+  border: 1px solid red;
+}
+
+.location-cont-title h2 {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.location-cont-title h1 {
+  font-size: 15px;
+}
+
+.location-cont-index {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  border: 1px solid red;
+  /* delete the border when done */
+}
+
+.location-cont-index-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 20%;
+  margin: 0 10px 0 10px;
+  border: 1px solid red;
+}
+
+.location-cont-index-item-image {
+  height: 60%;
+  width: 100%
+}
+
+.location-cont-index-item-name {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.location-cont-index-item-price {
+  font-size: 15px;
+}
