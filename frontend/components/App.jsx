@@ -5,6 +5,7 @@ import Modal from './modal/modal';
 import { Link, Route, Switch } from 'react-router-dom';
 import Footer from './footer/footer';
 import LocationIndexContainer from './location/location_index_container';
+import LocationDetailContainer from './location/location_detail_container';
 import SplashPage from './splash_page/splash_page';
 
 
@@ -26,9 +27,10 @@ const App = () => (
       </nav>
     </header>
 
-    <Route exact path="/" component={ SplashPage } />
 
     <Switch>
+      <Route path="/locations/:locationId" component={ LocationDetailContainer } />
+      <Route exact path="/" component={ SplashPage } />
       <Route exact path="/locations" component={ LocationIndexContainer } />
     </Switch>
 
