@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { fetchLocation } from '../../actions/locations_actions';
+import { fetchLocation } from '../../actions/location_actions';
 import LocationDetail from './location_detail';
 
 

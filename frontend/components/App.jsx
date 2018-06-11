@@ -29,7 +29,7 @@ const App = () => (
 
 
     <Switch>
-      <Route path="/locations/:locationId" component={ LocationDetailContainer } />
+      <Route exact path="/locations/:locationId" component={ LocationDetailContainer } />
       <Route exact path="/" component={ SplashPage } />
       <Route exact path="/locations" component={ LocationIndexContainer } />
     </Switch>

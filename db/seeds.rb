@@ -8,7 +8,7 @@
 
 
 User.destroy_all
-User.create({name: 'guest', email: 'guest@sample.com', password: 'password'})
+user1 = User.create({name: 'guest', email: 'guest@sample.com', password: 'password'})
 User.create({name: 'ryan', email: 'ryan@sample.com', password: 'password'})
 User.create({name: 'Aragorn', email: 'Aragorn@sample.com', password: 'password'})
 User.create({name: 'Gandalf', email: 'Gandalf@sample.com', password: 'password'})
@@ -26,7 +26,7 @@ Location.create({name: 'Tower of Orthanc', region:'Isengard', home_type:'Tower',
     beds: 25, bathrooms: 10, latitude: 10, longitude: 10, user_id: 1})
 Location.create({name: 'Bag End', region:'The Shire', home_type:'Home', description: 'Quiet peaceful location filled with Hobbits', price: 25, guests: 1, rooms: 1,
     beds: 1, bathrooms: 1, latitude: 15, longitude: 15, user_id: 1})
-Location.create({name: 'Mount Doom', region:'Morder', home_type:'Castle', description: 'the fiery birthplace of the ring', price: 1000, guests: 1, rooms: 1,
+Location.create({name: 'Mount Doom', region:'Mordor', home_type:'Castle', description: 'the fiery birthplace of the ring', price: 1000, guests: 1, rooms: 1,
     beds: 1, bathrooms: 1, latitude: 20, longitude: 20, user_id: 1})
 Location.create({name: 'Rivendell', region:'Rivendell', home_type:'Home', description: 'Elrond\s home', price: 350, guests: 10, rooms: 5,
     beds: 5, bathrooms: 5, latitude: 25, longitude: 25, user_id: 1})
