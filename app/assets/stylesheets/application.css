@@ -14,12 +14,12 @@
  */
 
 
-@import 'reset';
+@import "splash";
 
-@import 'splash';
-@import 'modal';
-@import 'session_form';
-@import 'navbar';
-@import 'footer';
-@import 'location_index';
-@import 'location_show';
+@import "reset";
+@import "modal";
+@import "session_form";
+@import "navbar";
+@import "footer";
+@import "location_index";
+@import "location_show";
