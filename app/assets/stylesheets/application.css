@@ -10,16 +10,6 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require ./project_css.scss
  *= require_self
  */
-
-
-@import "splash";
-
-@import "reset";
-@import "modal";
-@import "session_form";
-@import "navbar";
-@import "footer";
-@import "location_index";
-@import "location_show";
