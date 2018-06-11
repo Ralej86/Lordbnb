@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  width: 100%;
   padding: 3%;
   font-family: 'Cinzel', serif;
   border: 1px solid red;

@@ -30,7 +30,7 @@ Location.create({name: 'Mount Doom', description: 'the fiery birthplace of the r
     beds: 1, bathrooms: 1, latitude: 20, longitude: 20, user_id: 1})
 Location.create({name: 'Rivendell', description: 'Elrond\s home', price: 350, guests: 10, rooms: 5,
     beds: 5, bathrooms: 5, latitude: 25, longitude: 25, user_id: 1})
-Location.create({name: 'Moria', description: 'Great hall of the dwarves', price: 100, guests: 20, rooms: 10,
+Location.create({name: 'Mines of Moria', description: 'Great hall of the dwarves', price: 100, guests: 20, rooms: 10,
     beds: 15, bathrooms: 3, latitude: 30, longitude: 30, user_id: 1})
 Location.create({name: 'Edoras', description: 'Realm of the horse lords', price: 100, guests: 6, rooms: 2,
     beds: 4, bathrooms: 2, latitude: 35, longitude: 35, user_id: 1})
