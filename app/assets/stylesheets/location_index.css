@@ -25,7 +25,8 @@
 .location-cont-index {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: baseline;
   width: 100%;
   border: 1px solid red;
   /* delete the border when done */
@@ -35,14 +36,19 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
-  width: 20%;
-  margin: 0 10px 0 10px;
+  width: 23%;
+  margin: 0 10px 25px 10px;
   border: 1px solid red;
 }
 
 .location-cont-index-item-image {
   height: 60%;
-  width: 100%
+  width: 100%;
+}
+
+.location-cont-index-item-detail {
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .location-cont-index-item-name {
@@ -51,5 +57,9 @@
 }
 
 .location-cont-index-item-price {
-  font-size: 15px;
+  font-size: 13px;
+}
+
+.location-cont-item-rating {
+  font-size: 12px;
 }

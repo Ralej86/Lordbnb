@@ -22,7 +22,7 @@ class Api::LocationsController < ApplicationController
 
   private
   def location_params
-    params.require(:location).permit(:name, :description, :price, :guests,
+    params.require(:location).permit(:name, :region, :home_type, :description, :price, :guests,
       :rooms, :beds, :bathrooms, :latitude, :longitude)
   end
 end
