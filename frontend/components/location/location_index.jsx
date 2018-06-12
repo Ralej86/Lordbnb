@@ -7,7 +7,6 @@ class LocationIndex extends React.Component {
   }
 
   render() {
-
     return (
       <div className="location-cont">
         <div className="location-cont-title">

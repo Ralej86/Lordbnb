@@ -43,8 +43,6 @@ class LoginForm extends React.Component {
       <div className="session-form-container">
         <form onSubmit={this.handleSubmit} className="session-form-box">
           <span className="badge" onClick={this.props.closeModal} className="close-x">X</span>
-          <br/>
-          <br/>
             <br/>
             <div className="session-form">
               <div className='session-form-errors'>
