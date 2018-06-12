@@ -16,7 +16,7 @@ class LocationDetail extends React.Component{
   }
 
   render() {
-    if (!this.props.location) {
+    if (!this.props.location || !this.props.user) {
       return <div>loading...</div>;
     }
 
@@ -49,9 +49,23 @@ class LocationDetail extends React.Component{
               </ul>
               <div className="location-description">
                 <h2>About this listing</h2>
-                <p>{this.props.location.description}</p>
+                <p>{this.props.location.description} LONGER TEXT HERE MORE TEXT
+                MORE TEXT
+                MORE TEXT
+                MORE TEXT
+                MORE TEXT
+                MORE TEXT
+                MORE TEXT
+                MORE TEXT
+                MORE TEXT
+                MORE TEXT
+                MOAR MOAR MOAR
+                MOAR MOAR MOAR
+                MOAR MOAR MOAR
+                MOAR MOAR MOAR
+                MOAR MOAR MOAR
+              </p>
               </div>
-              location details should be going here
             </div>
             <div className="reviews-form">
               reviews would go here...if i had one

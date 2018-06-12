@@ -11,12 +11,15 @@ body {
 .below-image {
   display: flex;
   justify-content: center;
-  width: 900px;
+  width: 70%;
+  min-width: 800px;
   margin: 0 auto;
 }
 
 .location-detail-reviews {
   margin-right: 20px;
+  width: 55%;
+  min-width: 350px;
   border: 1px solid red;
 }
 
@@ -51,6 +54,7 @@ body {
 }
 
 .reviews-form {
+  width: 100%;
   border: 1px solid red;
 }
 
@@ -69,7 +73,7 @@ body {
   padding: 1px;
 }
 .location-detail-region {
-  font-size: 14px;
+  font-size: 16px;
   padding: 1px;
 }
 
@@ -82,5 +86,9 @@ body {
 }
 
 .location-description {
+  padding: 10px;
+}
+
+.location-description h2 {
   padding: 10px;
 }
