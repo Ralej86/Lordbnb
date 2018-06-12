@@ -7,6 +7,7 @@ import Footer from './footer/footer';
 import LocationIndexContainer from './location/location_index_container';
 import LocationDetailContainer from './location/location_detail_container';
 import SplashPage from './splash_page/splash_page';
+import LocationMap from './map/location_map';
 
 
 const App = () => (
@@ -31,6 +32,7 @@ const App = () => (
     <Switch>
       <Route exact path="/locations/:locationId" component={ LocationDetailContainer } />
       <Route exact path="/" component={ SplashPage } />
+      <Route path='/map' component={ LocationMap } />
       <Route exact path="/locations" component={ LocationIndexContainer } />
     </Switch>
 

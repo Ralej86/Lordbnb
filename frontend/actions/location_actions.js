@@ -13,8 +13,8 @@ const receiveLocation = payload => ({
   payload
 })
 
-export const fetchLocations = () => dispatch => (
-  LocationApiUtil.getLocations().then(
+export const fetchLocations = filters => dispatch => (
+  LocationApiUtil.getLocations(filters).then(
     locations => dispatch(receiveAllLocations(locations)))
 );
 
