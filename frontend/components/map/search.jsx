@@ -1,9 +1,12 @@
 import React from 'react';
 
+import LocationMap from './location_map';
+
 const Search = state => (
   <div>
-    BenchIndex
-    BenchMap
+
+    LocationIndex
+    <LocationMap locations={state.entities.locations} />
   </div>
 );
 
