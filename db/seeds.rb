@@ -38,7 +38,7 @@ Location.create({name: 'Rivendell', region:'Rivendell', home_type:'Home', descri
      user_id: user4.id})
 Location.create({name: 'Dwarrowdelf', region:'Mines of Moria', home_type:'Castle', description: 'Great hall of the dwarves', price: 100, guests: 20, rooms: 10,
     beds: 15, bathrooms: 3, latitude: 30, longitude: 30, image_url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e471a27144269e4b573dfdee025e7327&auto=format&fit=crop&w=500&q=60",
-     user_id: 1})
-Location.create({name: 'Edoras', region:'Region', home_type:'Estate', description: 'Realm of the horse lords', price: 100, guests: 6, rooms: 2,
+     user_id: user7.id})
+Location.create({name: 'Edoras', region:'Rohan', home_type:'Estate', description: 'Realm of the horse lords', price: 100, guests: 6, rooms: 2,
     beds: 4, bathrooms: 2, latitude: 35, longitude: 35, image_url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e471a27144269e4b573dfdee025e7327&auto=format&fit=crop&w=500&q=60",
-     user_id: 1})
+     user_id: user4.id})
