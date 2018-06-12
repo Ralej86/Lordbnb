@@ -1,6 +1,6 @@
 import { RECEIVE_ALL_LOCATIONS,
   RECEIVE_LOCATION } from '../actions/location_actions';
-  import merge from 'lodash/merge'
+  import merge from 'lodash/merge';
 
 const locationReducer = (state = {}, action) => {
   Object.freeze(state);
@@ -8,7 +8,7 @@ const locationReducer = (state = {}, action) => {
     case RECEIVE_ALL_LOCATIONS:
       return action.locations
     case RECEIVE_LOCATION:
-    return merge({}, state, {[action.location.id]: action.location})
+    return merge({}, state, {[action.payload.location.id]: action.payload.location})
     default:
       return state;
   }

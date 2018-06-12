@@ -33,10 +33,21 @@ body {
   padding: 10px;
 }
 
+.location-detail-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .location-detail-user img {
   border-radius: 50%;
   width: 50px;
   margin: 10px 10px;
+}
+
+.location-detail-user p {
+  font-size: 12px;
+  margin-left: 5px;
 }
 
 .reviews-form {

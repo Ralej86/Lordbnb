@@ -8,9 +8,9 @@ const receiveAllLocations = locations => ({
   locations
 })
 
-const receiveLocation = location => ({
+const receiveLocation = payload => ({
   type: RECEIVE_LOCATION,
-  location
+  payload
 })
 
 export const fetchLocations = () => dispatch => (
@@ -20,7 +20,7 @@ export const fetchLocations = () => dispatch => (
 
 export const fetchLocation = id => dispatch => (
   LocationApiUtil.getLocation(id).then(
-    location => dispatch(receiveLocation(location)))
+    payload => dispatch(receiveLocation(payload)))
 );
 
 export const createLocation = formLocation => dispatch => (

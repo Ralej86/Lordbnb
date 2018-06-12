@@ -37,8 +37,8 @@ class LocationDetail extends React.Component{
                   <li className="location-detail-region">{this.props.location.region}</li>
                 </ul>
                 <div className="location-detail-user">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaiaI-gohzE2_ynQhj6w0pWO3AT2KW44hI1x4lpBavKXRpmtXr7A"/>
-                  <p></p>
+                  <img src={this.props.user.image_url} />
+                  <p>{this.props.user.name}</p>
                 </div>
               </div>
               <ul className="location-attr">
