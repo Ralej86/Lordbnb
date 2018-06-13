@@ -5,7 +5,9 @@ import LocationIndexContainer from '../location/location_index_container';
 
 const Search = ({ locations, updateFilter }) => (
   <div className = "map-page">
-    <LocationIndexContainer locations= { locations }/>
+    <div className="map-index">
+      <LocationIndexContainer locations= { locations }/>
+    </div>
     <LocationMap
       locations= { locations }
       updateFilter= { updateFilter }

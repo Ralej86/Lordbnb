@@ -18,7 +18,7 @@ user7 = User.create({name: 'Gimli', email: 'Gimli@sample.com', password: 'passwo
 user8 = User.create({name: 'Frodo', email: 'Frodo@sample.com', password: 'password', image_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaiaI-gohzE2_ynQhj6w0pWO3AT2KW44hI1x4lpBavKXRpmtXr7A"})
 
 Location.destroy_all
-Location.create({name: 'Minas Tirith', region:'Gonder', home_type:'Castle', description: 'Capital city of the kingdom of Gonder',
+Location.create({name: 'Minas Tirith', region:'Gondor', home_type:'Castle', description: 'Capital city of the kingdom of Gonder',
    price: 50, guests: 8, rooms: 2, beds: 8, bathrooms: 2, latitude: 37.776381, longitude: -122.433815, image_url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e471a27144269e4b573dfdee025e7327&auto=format&fit=crop&w=500&q=60",
     user_id: user3.id})
 Location.create({name: 'Helm\'s Deep ', region:'Rohan', home_type:'Castle', description: 'Fortress of Rohan', price: 250, guests: 5, rooms: 1,
@@ -33,7 +33,7 @@ Location.create({name: 'Bag End', region:'The Shire', home_type:'Home', descript
 Location.create({name: 'Mount Doom', region:'Mordor', home_type:'Castle', description: 'the fiery birthplace of the ring', price: 1000, guests: 1, rooms: 1,
     beds: 1, bathrooms: 1, latitude: 37.799990, longitude: -122.409886, image_url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e471a27144269e4b573dfdee025e7327&auto=format&fit=crop&w=500&q=60",
      user_id: user6.id})
-Location.create({name: 'Rivendell', region:'Rivendell', home_type:'Home', description: 'Elrond\s home', price: 350, guests: 10, rooms: 5,
+Location.create({name: 'Rivendell', region:'Rivendell', home_type:'Home', description: 'Elrond\'s home', price: 350, guests: 10, rooms: 5,
     beds: 5, bathrooms: 5, latitude: 37.798820, longitude: -122.401289, image_url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e471a27144269e4b573dfdee025e7327&auto=format&fit=crop&w=500&q=60",
      user_id: user4.id})
 Location.create({name: 'Dwarrowdelf', region:'Mines of Moria', home_type:'Castle', description: 'Great hall of the dwarves', price: 100, guests: 20, rooms: 10,

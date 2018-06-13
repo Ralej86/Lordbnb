@@ -2,11 +2,16 @@ export default class MarkerManager {
   constructor(map) {
     this.map = map;
     this.markers = {};
+
   }
 
   updateMarkers(locations) {
     const locationsObj = {};
     locations.forEach( location => locationsObj[location.id] = location);
+
+    locations
+    .filter(location => !this.markers[location.id])
+    .forEach(newLocation => this.createMarkerFromLocation(newLocation))
 
     console.log('time to update?');
   }
@@ -19,6 +24,7 @@ export default class MarkerManager {
       locationId: location.id
     });
 
+    marker.addListener('click', () => this.handleClick(location));
     this.markers[marker.locationId] = marker;
   }
 
