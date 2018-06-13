@@ -15,7 +15,7 @@ class LocationMap extends React.Component {
 
     const map = this.refs.map
     this.map = new google.maps.Map(this.mapNode, mapOptions);
-    this.MarkerManager = new MarkerManager(this.map, Object.values(this.props.locations));
+    this.MarkerManager = new MarkerManager(this.map, this.props.locations);
     this.registerListeners();
   }
 

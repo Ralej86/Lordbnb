@@ -45,11 +45,9 @@ class LoginForm extends React.Component {
           <span className="badge" onClick={this.props.closeModal} className="close-x">X</span>
             <br/>
             <div className="session-form">
-              <div className='session-form-errors'>
+              <div id="login-errors" className='session-form-errors'>
                 {this.renderErrors()}
               </div>
-            <br/>
-
             <label>
               <input type="text"
                 value={this.state.email}

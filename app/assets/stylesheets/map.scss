@@ -1,4 +1,10 @@
+.map-page {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
 .map-container {
-  height: 500px;
-  width: 500px;
+  height: 100vh;
+  width: 50%;
 }

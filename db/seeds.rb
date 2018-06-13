@@ -19,26 +19,26 @@ user8 = User.create({name: 'Frodo', email: 'Frodo@sample.com', password: 'passwo
 
 Location.destroy_all
 Location.create({name: 'Minas Tirith', region:'Gonder', home_type:'Castle', description: 'Capital city of the kingdom of Gonder',
-   price: 50, guests: 8, rooms: 2, beds: 8, bathrooms: 2, latitude: 0, longitude: 0, image_url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e471a27144269e4b573dfdee025e7327&auto=format&fit=crop&w=500&q=60",
+   price: 50, guests: 8, rooms: 2, beds: 8, bathrooms: 2, latitude: 37.776381, longitude: -122.433815, image_url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e471a27144269e4b573dfdee025e7327&auto=format&fit=crop&w=500&q=60",
     user_id: user3.id})
 Location.create({name: 'Helm\'s Deep ', region:'Rohan', home_type:'Castle', description: 'Fortress of Rohan', price: 250, guests: 5, rooms: 1,
-    beds: 5, bathrooms: 4, latitude: 5, longitude: 5, image_url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e471a27144269e4b573dfdee025e7327&auto=format&fit=crop&w=500&q=60",
+    beds: 5, bathrooms: 4, latitude: 37.796865, longitude: -122.425705, image_url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e471a27144269e4b573dfdee025e7327&auto=format&fit=crop&w=500&q=60",
      user_id: user3.id})
 Location.create({name: 'Tower of Orthanc', region:'Isengard', home_type:'Tower', description: 'Home of Saruman', price: 100, guests: 30, rooms: 10,
-    beds: 25, bathrooms: 10, latitude: 10, longitude: 10, image_url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e471a27144269e4b573dfdee025e7327&auto=format&fit=crop&w=500&q=60",
+    beds: 25, bathrooms: 10, latitude: 37.797030, longitude: -122.433671, image_url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e471a27144269e4b573dfdee025e7327&auto=format&fit=crop&w=500&q=60",
      user_id: user4.id})
 Location.create({name: 'Bag End', region:'The Shire', home_type:'Home', description: 'Quiet peaceful location filled with Hobbits', price: 25, guests: 1, rooms: 1,
-    beds: 1, bathrooms: 1, latitude: 15, longitude: 15, image_url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e471a27144269e4b573dfdee025e7327&auto=format&fit=crop&w=500&q=60",
+    beds: 1, bathrooms: 1, latitude: 37.804028, longitude: -122.468067, image_url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e471a27144269e4b573dfdee025e7327&auto=format&fit=crop&w=500&q=60",
      user_id: user8.id})
 Location.create({name: 'Mount Doom', region:'Mordor', home_type:'Castle', description: 'the fiery birthplace of the ring', price: 1000, guests: 1, rooms: 1,
-    beds: 1, bathrooms: 1, latitude: 20, longitude: 20, image_url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e471a27144269e4b573dfdee025e7327&auto=format&fit=crop&w=500&q=60",
+    beds: 1, bathrooms: 1, latitude: 37.799990, longitude: -122.409886, image_url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e471a27144269e4b573dfdee025e7327&auto=format&fit=crop&w=500&q=60",
      user_id: user6.id})
 Location.create({name: 'Rivendell', region:'Rivendell', home_type:'Home', description: 'Elrond\s home', price: 350, guests: 10, rooms: 5,
-    beds: 5, bathrooms: 5, latitude: 25, longitude: 25, image_url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e471a27144269e4b573dfdee025e7327&auto=format&fit=crop&w=500&q=60",
+    beds: 5, bathrooms: 5, latitude: 37.798820, longitude: -122.401289, image_url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e471a27144269e4b573dfdee025e7327&auto=format&fit=crop&w=500&q=60",
      user_id: user4.id})
 Location.create({name: 'Dwarrowdelf', region:'Mines of Moria', home_type:'Castle', description: 'Great hall of the dwarves', price: 100, guests: 20, rooms: 10,
-    beds: 15, bathrooms: 3, latitude: 30, longitude: 30, image_url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e471a27144269e4b573dfdee025e7327&auto=format&fit=crop&w=500&q=60",
+    beds: 15, bathrooms: 3, latitude: 37.795479, longitude: -122.406344, image_url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e471a27144269e4b573dfdee025e7327&auto=format&fit=crop&w=500&q=60",
      user_id: user7.id})
 Location.create({name: 'Edoras', region:'Rohan', home_type:'Estate', description: 'Realm of the horse lords', price: 100, guests: 6, rooms: 2,
-    beds: 4, bathrooms: 2, latitude: 35, longitude: 35, image_url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e471a27144269e4b573dfdee025e7327&auto=format&fit=crop&w=500&q=60",
+    beds: 4, bathrooms: 2, latitude: 37.542354, longitude: -122.294353, image_url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e471a27144269e4b573dfdee025e7327&auto=format&fit=crop&w=500&q=60",
      user_id: user4.id})

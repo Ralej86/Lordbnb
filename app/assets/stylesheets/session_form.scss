@@ -1,5 +1,5 @@
 .session-form-container {
-  font-family: 'Cinzel', serif;
+  // font-family: 'Cinzel', serif;
   width: 100%;
 }
 
@@ -25,15 +25,13 @@
 }
 
 .session-form button {
+  position: absolute;
+  top: 88%;
+  text-align: center;
+  color: #008489;
   font-weight: bold;
-  background: #4267b2;
-  color: #fff;
-  width: 60%;
-  height: 50px;
-  margin-top: 10px;
-  border: 1px solid #4267b2;
-  border-radius: 5px;
-  padding-left: 40%;
+  text-decoration: underline;
+  margin-left: 41%;
 }
 
 .login-signup button {
@@ -66,20 +64,18 @@
 
 .session-form button:hover {
   cursor: pointer;
-  background-color: lightblue;
-  border-color: lightblue;
 }
 
 .session-submit {
   font-weight: bold;
   background: red;
   color: white;
-  width: 60%;
+  width: 100%;
   height: 50px;
   margin-top: 20px;
   border: 1px solid red;
   border-radius: 5px;
-  padding-left: 40%;
+  text-align: center;
 }
 
 .session-submit:hover {
@@ -94,6 +90,13 @@
 
 .session-form-errors {
   height: 50px;
-  width: 80%;
+  width: 100%;
   font-size: 14px;
+  text-align: center;
+}
+
+#login-errors {
+  position: relative;
+  top: 25px;
+  height: 90px;
 }
