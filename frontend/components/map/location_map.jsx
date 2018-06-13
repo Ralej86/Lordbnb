@@ -4,8 +4,8 @@ import ReactDOM from 'react-dom';
 import MarkerManager from '../../utils/marker_manager';
 
 const getCoordsObj = latLng => ({
-  lat: latLng.latitude(),
-  lng: latLng.longitude()
+  lat: latLng.lat(),
+  lng: latLng.lng()
 });
 
 const mapOptions = {
@@ -20,7 +20,8 @@ class LocationMap extends React.Component {
   componentDidMount() {
     const map = this.refs.map;
     this.map = new google.maps.Map(map, mapOptions);
-    this.MarkerManager = new MarkerManager(this.map);
+    this.MarkerManager = new MarkerManager(this.map, this.handleMarkerClick.bind(this));
+
     this.registerListeners();
     this.MarkerManager.updateMarkers(this.props.locations);
   }
@@ -33,10 +34,14 @@ class LocationMap extends React.Component {
     google.maps.event.addListener(this.map, 'idle', () => {
       const { north, south, east, west } = this.map.getBounds().toJSON();
       const bounds = {
-        northEast: { latitude: north, longitude: east},
-        southWest: { latitude: south, longitude: west } };
+        northEast: { lat: north, lng: east},
+        southWest: { lat: south, lng: west } };
         this.props.updateFilter('bounds', bounds);
       });
+    google.maps.event.addListener(this.map, 'click', (event) => {
+      const coords = getCoordsObj(event.latLng);
+      this.handleClick(coords)
+    })
   }
 
   handleMarkerClick(location) {
