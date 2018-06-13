@@ -1,23 +1,17 @@
 import React from 'react';
 
 import LocationMap from './location_map';
+import LocationIndexContainer from '../location/location_index_container';
 
-const Search = state => (
+const Search = ({ locations, updateFilter }) => (
   <div>
 
-    LocationIndex
-    <LocationMap locations={state.entities.locations} />
+    <LocationIndexContainer locations= { locations }/>
+    <LocationMap
+      locations= { locations }
+      updateFilter= { updateFilter }
+      />
   </div>
 );
-
-
-class Search extends React.Component {
-  render() {
-    return (
-    <div>
-      contains BenchMap, bench index
-    </div>
-  )}
-}
 
 export default Search;

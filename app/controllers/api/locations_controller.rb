@@ -1,7 +1,7 @@
 class Api::LocationsController < ApplicationController
   before_action :logged_in?, only: [:create]
   def index
-    @locations = Location.all
+    @locations = params[:bounds] ? Location.in_bounds(params[:bounds]) : Location.all
     render :index
   end
 

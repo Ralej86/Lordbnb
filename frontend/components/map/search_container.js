@@ -1,8 +1,10 @@
 import { connect } from 'react-redux';
 import Search from './search';
+import { updateFilter } from '../../actions/filter_actions';
 
 const mapStateToProps = state => ({
-  locations: Object.keys(state.entities.locations).map( key => state.entities.locations[key])
+  locations: Object.values(state.entities.locations)
+  // locations: Object.keys(state.entities.locations).map( key => state.entities.locations[key])
 })
 
 const mapDispatchToProps = dispatch => ({
