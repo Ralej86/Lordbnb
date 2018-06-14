@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ReviewIndexContainer from '../review/review_index_container';
+
 class LocationDetail extends React.Component{
   constructor(props) {
     super(props)
@@ -15,11 +17,10 @@ class LocationDetail extends React.Component{
     }
   }
 
-  render() {
-    if (!this.props.location || !this.props.user) {
+  render() {;
+    if (this.props.users === undefined || Object.values(this.props.users).length === 0) {
       return <div>loading...</div>;
     }
-
 
     return (
       <div className="location-detail-cont">
@@ -37,8 +38,8 @@ class LocationDetail extends React.Component{
                   <li className="location-detail-region">{this.props.location.region}</li>
                 </ul>
                 <div className="location-detail-user">
-                  <img src={this.props.user.image_url} />
-                  <p>{this.props.user.name}</p>
+                  <img src={this.props.users[this.props.location.user_id]['image_url']} />
+                  <p>{this.props.users[this.props.location.user_id].name}</p>
                 </div>
               </div>
               <ul className="location-attr">
@@ -49,33 +50,19 @@ class LocationDetail extends React.Component{
               </ul>
               <div className="location-description">
                 <h2>About this listing</h2>
-                <p>{this.props.location.description} LONGER TEXT HERE MORE TEXT
-                MORE TEXT
-                MORE TEXT
-                MORE TEXT
-                MORE TEXT
-                MORE TEXT
-                MORE TEXT
-                MORE TEXT
-                MORE TEXT
-                MORE TEXT
-                MOAR MOAR MOAR
-                MOAR MOAR MOAR
-                MOAR MOAR MOAR
-                MOAR MOAR MOAR
-                MOAR MOAR MOAR
-              </p>
+                <p>{this.props.location.description} LONGER TEXT HERE MORE TEXT</p>
               </div>
             </div>
-            <div className="reviews-form">
-              reviews would go here...if i had one
+              <div className="reviews">
+                REVIEWS GO HERE
+                <ReviewIndexContainer locationId={this.props.location.id}/>
+              </div>
+            </div>
+            <div className="booking-form">
+              booking would go here...if i had one
             </div>
           </div>
-          <div className="booking-form">
-            booking would go here...if i had one
-          </div>
         </div>
-      </div>
     )
   }
 }

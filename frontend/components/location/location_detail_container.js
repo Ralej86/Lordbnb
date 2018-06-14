@@ -1,25 +1,22 @@
 import { connect } from 'react-redux';
-import { fetchLocation } from '../../actions/location_actions';
+import { fetchLocation, fetchReview } from '../../actions/location_actions';
 import LocationDetail from './location_detail';
 
 
 const mapStateToProps = (state, ownProps) =>  {
   let location = state.entities.locations[ownProps.match.params.locationId];
-  let user;
+  let users;
   if (location) {
-    user = state.entities.users[location.user_id];
+    users = state.entities.users;
   }
+  let reviews = state.entities.reviews;
 
   return {
     location,
-    user
+    users,
+    reviews
   }
 }
-
-// ({
-//   location: state.entities.locations[ownProps.match.params.locationId],
-//   user: state.entities.users[location]
-// })
 
 const mapDispatchToProps = dispatch => ({
   fetchLocation: id => dispatch(fetchLocation(id))
