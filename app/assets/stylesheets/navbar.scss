@@ -19,6 +19,12 @@
 
 .header-nav-title {
   display: block;
+  text-decoration: underline;
+  color: blue;
+}
+
+.header-nav-title:hover {
+  color: darkblue;
 }
 
 .header-nav-left {

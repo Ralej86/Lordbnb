@@ -7,6 +7,10 @@ class Location < ApplicationRecord
     foreign_key: :user_id,
     class_name: 'User'
 
+  has_many :reviews,
+    foreign_key: :location_id,
+    class_name: 'Review'
+
 
   def self.in_bounds(bounds)
     self.where("latitude < ?", bounds[:northEast][:lat])

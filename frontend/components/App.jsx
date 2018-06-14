@@ -23,7 +23,7 @@ const App = () => (
               alt="LOTR-logo"></img>
           </Link>
 
-          <Link to="/locations" className="header-nav-title">Lord BnB</Link>
+          <Link to="/map" className="header-nav-title">To Map</Link>
         </div>
         <NavbarContainer />
       </nav>
