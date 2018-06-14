@@ -5,12 +5,12 @@ import ReviewIndex from './review_index';
 const msp = (state, locationId) => {
   const currentLocation = state.entities.locations[locationId];
   const reviews = Object.values(state.entities.reviews);
-  const currentUser = state.entities.users[state.session.id];
+  const users = state.entities.users;
 
   return ({
     currentLocation,
     reviews,
-    currentUser
+    users
   })
 }
 

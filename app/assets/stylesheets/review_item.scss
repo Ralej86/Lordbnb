@@ -1,0 +1,49 @@
+.reviews {
+}
+
+.review-index {
+}
+
+
+.review-index-item {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0 25px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.review-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 30%;
+  margin-bottom: 15px;
+}
+
+.review-title {
+}
+
+.review-title h3 {
+}
+
+.review-title p {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.review-user {
+  align-items: center;
+}
+
+.review-user img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.review-user p {
+
+}
+
+.review-body {
+}

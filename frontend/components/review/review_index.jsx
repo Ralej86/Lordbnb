@@ -1,12 +1,22 @@
 import React from 'react';
 
-import ReviewItem from './review_item'
+import ReviewIndexItem from './review_index_item'
 
 class ReviewIndex extends React.Component {
 
   render () {
     return (
-    <div>
+    <div className="review-index">
+      <ul>
+        {this.props.reviews.map( review =>
+          <ReviewIndexItem
+            key={review.id}
+            currentLocation={this.props.currentLocation}
+            review={review}
+            users={this.props.users}
+            />
+        )}
+      </ul>
     </div>
   )
   }
