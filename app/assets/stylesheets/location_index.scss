@@ -2,17 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: space-evenly;
-  padding: 3%;
-  border: 1px solid red;
-  /*  delete the border when done styling */
 }
 
-/*  Selection below can be deleted, used to identify the div*/
 .location-cont-title {
-  border: 1px solid red;
 }
 
 .location-cont-title h2 {
+  padding: 5px;
   font-weight: 700;
   font-size: 22px;
 }
@@ -27,17 +23,15 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
-  border: 1px solid red;
-  /* delete the border when done */
 }
 
 .location-cont-index-item {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  width: 23%;
+  width: 30%;
+  min-width: 150px;
   margin: 0 10px 25px 10px;
-  border: 1px solid red;
 }
 
 .location-cont-index-item-image {

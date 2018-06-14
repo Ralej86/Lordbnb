@@ -1,15 +1,22 @@
 .map-page {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 
 .map-index {
   height: 100%;
-  width: 50%
+  width: 70%
 }
 
 
 .map-container {
-  height: 100vh;
-  width: 50%;
+  position: sticky;
+  left: 70%;
+  height: 90vh;
+  width: 35%;
+}
+
+.map {
+  height: 88vh;
+  width: 95%
 }
