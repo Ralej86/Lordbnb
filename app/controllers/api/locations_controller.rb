@@ -1,9 +1,16 @@
 class Api::LocationsController < ApplicationController
   before_action :logged_in?, only: [:create]
   def index
+    if params[:bounds].nil?
+      locations = Location.all
+    else
+      locations = Location.in_bounds(params[:bounds])
+    end
+    # locations = Location.in_bounds(params[:bounds]) || Location.all
+
+    # locations = bounds ? Location.in_bounds(bounds) : Location.all
     # debugger
-    locations = Location.in_bounds(params[:bounds])
-    # locations = params[:bounds] ? Location.in_bounds(params[:bounds]) : Location.all
+    # locations = Location.in_bounds(bounds)
 
 
     if params[:minSeating] && params[:maxSeating]
@@ -38,5 +45,9 @@ class Api::LocationsController < ApplicationController
 
   def seating_range
     (params[:minSeating]..params[:maxSeating])
+  end
+
+  def bounds
+    params[:bounds]
   end
 end

@@ -4,7 +4,7 @@ import LocationMap from './location_map';
 // import LocationIndexContainer from '../location/location_index_container';
 import LocationIndex from  '../location/location_index';
 
-const Search = ({ locations, minSeating, maxSeating, updateFilter }) => (
+const Search = ({ locations, updateFilter }) => (
   <div className = "map-page">
     <div className="map-index">
       <LocationIndex locations= { locations }/>
