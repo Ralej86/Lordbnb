@@ -11,7 +11,7 @@ User.destroy_all
 user1 = User.create({name: 'guest', email: 'guest@sample.com', password: 'password', image_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaiaI-gohzE2_ynQhj6w0pWO3AT2KW44hI1x4lpBavKXRpmtXr7A"})
 user2 = User.create({name: 'ryan', email: 'ryan@sample.com', password: 'password', image_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaiaI-gohzE2_ynQhj6w0pWO3AT2KW44hI1x4lpBavKXRpmtXr7A"})
 user3 = User.create({name: 'Aragorn', email: 'Aragorn@sample.com', password: 'password', image_url:"https://cdn.empireonline.com/jpg/70/0/0/640/480/aspectfit/0/0/0/0/0/0/c/articles/5afcbbb7c1eec0c91e26b804/aragorn-lord-rings.jpg"})
-user4 = User.create({name: 'Gandalf', email: 'Gandalf@sample.com', password: 'password', image_url:"https://regenerationproject.org/wp-content/uploads/2018/01/gandalf-2.jpgA"})
+user4 = User.create({name: 'Gandalf', email: 'Gandalf@sample.com', password: 'password', image_url:"https://vignette.wikia.nocookie.net/lotr/images/8/8d/Gandalf-2.jpg/revision/latest?cb=20130209172436"})
 user5 = User.create({name: 'Legolas', email: 'Legolas@sample.com', password: 'password', image_url:"https://vignette.wikia.nocookie.net/edain-mod/images/d/da/Legolas_portrait_-_EmpireMag.jpg/revision/latest?cb=20160121163945"})
 user6 = User.create({name: 'Sauron', email: 'Sauron@sample.com', password: 'password', image_url:"https://vignette.wikia.nocookie.net/villains/images/c/c1/Eye_of_Sauron.jpg/revision/latest?cb=20171214201353"})
 user7 = User.create({name: 'Gimli', email: 'Gimli@sample.com', password: 'password', image_url:"https://vignette.wikia.nocookie.net/lotr/images/e/ec/Gimli_-_FOTR.png/revision/latest?cb=20121008105956"})
@@ -89,5 +89,22 @@ rev10 = Review.create({title:"Homely" , body:"The ceilings are a little low but 
 rev11 = Review.create({title:"Hard to get to" , body:"I found it extremely difficult to get here.  But once I was here I almost didn\'t want to leave." , rating: 3, author_id:user8.id , location_id:loc5.id })
 rev12 = Review.create({title:"AVOID THIS PLACE" , body:"Don\'t ever come here." , rating: 1, author_id:user4.id , location_id:loc5.id })
 
-rev12 = Review.create({title:"Nice and quiet" , body:"I like to come here and relax.  It\'s a nice place to come to." , rating: 4, author_id:user4.id , location_id:loc6.id })
-rev12 = Review.create({title:"Nice and quiet" , body:"I like to come here and relax.  It\'s a nice place to come to." , rating: 4, author_id:user4.id , location_id:loc6.id })
+rev13 = Review.create({title:"Nice and quiet" , body:"I like to come here and relax.  It\'s a nice place to come to." , rating: 4, author_id:user4.id , location_id:loc6.id })
+rev14 = Review.create({title:"Fantastic" , body:"I love this place.  The host\'s daughter is really nice to me." , rating: 5, author_id:user3.id , location_id:loc6.id })
+
+rev15 = Review.create({title:"Dark and dreary" , body:"I think elves have better homes." , rating: 3, author_id:user5.id , location_id:loc7.id })
+rev16 = Review.create({title:"Weird" , body:"When we were staying here we were interrupted by someone renting out the basement.  He was quite rude." , rating: 1, author_id:user4.id , location_id:loc7.id })
+rev17 = Review.create({title:"Bad neighborhood" , body:"I am not a huge fan of the neighbors, otherwise it was okay." , rating: 2, author_id:user8.id , location_id:loc7.id })
+
+rev18 = Review.create({title:"Awesome" , body:"They have beautiful horses here." , rating: 4, author_id:user5.id , location_id:loc8.id })
+rev19 = Review.create({title:"Nice" , body:"This place almost feels like home." , rating: 5, author_id:user3.id , location_id:loc8.id })
+
+rev20 = Review.create({title:"Never Coming Back" , body:"I got extremely bad allergies from the trees here." , rating: 2, author_id:user7.id , location_id:loc9.id })
+rev21 = Review.create({title:"Interesting" , body:"This place had nice accomodations.  The host was a really welcoming to us." , rating: 4, author_id:user8.id , location_id:loc9.id })
+
+rev22 = Review.create({title:"Dirty" , body:"I would not reccomend this place.  The people who live here don\'t clean up after themselves." , rating: 2, author_id:user8.id , location_id:loc10.id })
+
+rev23 = Review.create({title:"Accomodating" , body:"This place was nice to us.  They even had rooms for us smaller people." , rating: 5, author_id:user8.id , location_id:loc11.id })
+rev24 = Review.create({title:"Nice quiet place" , body:"I like to come here and just relax." , rating: 5, author_id:user3.id , location_id:loc11.id })
+
+rev25 = Review.create({title:"Cool" , body:"I came here very briefly and enjoyed the architecture of the entrace." , rating: 3, author_id:user8.id , location_id:loc12.id })
