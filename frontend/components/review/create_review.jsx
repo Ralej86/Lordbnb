@@ -22,6 +22,13 @@ class CreateReview extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.createReview(this.state);
+    this.setState({
+      title: "",
+      body: "",
+      rating: "",
+      location_id: this.props.currentLocation.id,
+      author_id: this.props.currentUser
+    })
   }
 
   render () {

@@ -8,9 +8,9 @@ export const receiveReview = payload => ({
   payload
 })
 
-const deleteReview = reviewId => ({
+const deleteReview = payload => ({
   type: DELETE_REVIEW,
-  reviewId
+  payload
 })
 
 export const createReview = formReview => dispatch => (
@@ -25,5 +25,5 @@ export const updateReview = formReview => dispatch => (
 
 export const destroyReview = id => dispatch => (
   ReviewApiUtils.deleteReview(id).then(
-    review => dispatch(deleteReview(reviewId)))
+    payload => dispatch(deleteReview(payload)))
 )

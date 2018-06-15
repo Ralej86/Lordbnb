@@ -8,7 +8,7 @@ class User < ApplicationRecord
     class_name: 'Location'
 
   has_many :reviews,
-    foreign_key: :user_id,
+    foreign_key: :author_id,
     class_name: 'Review'
 
   attr_reader :password

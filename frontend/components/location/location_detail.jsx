@@ -10,16 +10,12 @@ class LocationDetail extends React.Component{
   }
 
   componentDidMount() {
-    debugger
     this.props.fetchLocation(this.props.match.params.locationId)
   }
 
   componentWillReceiveProps(nextProps) {
     if (this.props.match.params.locationId !== nextProps.match.params.locationId) {
       this.props.fetchLocation(nextProps.match.params.locationId)
-    }
-    if (this.props.reviews !== nextProps.reviews) {
-      this.setState({});
     }
   }
 
@@ -30,7 +26,6 @@ class LocationDetail extends React.Component{
 
     return (
       <div className="location-detail-cont">
-        COME SEE ME
         <div className="location-detail-image">
           <img id="host-image" src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e471a27144269e4b573dfdee025e7327&auto=format&fit=crop&w=500&q=60"/>
         </div>
@@ -56,11 +51,11 @@ class LocationDetail extends React.Component{
               </ul>
               <div className="location-description">
                 <h2>About this listing</h2>
-                <p>{this.props.location.description} LONGER TEXT HERE MORE TEXT</p>
+                <p>{this.props.location.description}</p>
               </div>
             </div>
               <div className="reviews">
-                REVIEWS GO HERE
+                <h2>REVIEWS</h2>
                 <ReviewIndexContainer locationId={this.props.location.id}/>
                 <CreateReviewContainer />
 

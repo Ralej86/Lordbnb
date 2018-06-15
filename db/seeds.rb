@@ -28,7 +28,7 @@ Location.create({name: 'Tower of Orthanc', region:'Isengard', home_type:'Tower',
     beds: 25, bathrooms: 10, latitude: 37.797030, longitude: -122.433671, image_url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e471a27144269e4b573dfdee025e7327&auto=format&fit=crop&w=500&q=60",
      user_id: user4.id})
 Location.create({name: 'Bag End', region:'The Shire', home_type:'Home', description: 'Quiet peaceful location filled with Hobbits', price: 25, guests: 1, rooms: 1,
-    beds: 1, bathrooms: 1, latitude: 37.804028, longitude: -122.468067, image_url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e471a27144269e4b573dfdee025e7327&auto=format&fit=crop&w=500&q=60",
+    beds: 1, bathrooms: 1, latitude: 37.804028, longitude: -122.468067, image_url: "https://images.unsplash.com/photo-1523593288094-3ccfb6b2c192?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c628d79d2e001c772fad8697f3b386c5&auto=format&fit=crop&w=657&q=80",
      user_id: user8.id})
 Location.create({name: 'Mount Doom', region:'Mordor', home_type:'Castle', description: 'the fiery birthplace of the ring', price: 1000, guests: 1, rooms: 1,
     beds: 1, bathrooms: 1, latitude: 37.799990, longitude: -122.409886, image_url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e471a27144269e4b573dfdee025e7327&auto=format&fit=crop&w=500&q=60",

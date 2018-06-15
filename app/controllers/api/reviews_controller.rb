@@ -14,7 +14,7 @@ class Api::ReviewsController < ApplicationController
   end
 
   def update
-    @review = current_user.reviews.find_by(params[:id])
+    @review = current_user.reviews.find_by(id: Integer(params[:id]))
     if @review.update_attributes(review_params)
       render :show
     else
@@ -22,8 +22,8 @@ class Api::ReviewsController < ApplicationController
     end
   end
 
-  def delete
-    @review = Review.find_by(params[:id])
+  def destroy
+    @review = Review.find(params[:id])
     if @review.destroy
       render :show
     else
@@ -33,6 +33,6 @@ class Api::ReviewsController < ApplicationController
 
   private
   def review_params
-    params.require(:review).permit(:title, :body, :rating, :location_id)
+    params.require(:review).permit(:title, :body, :rating, :location_id, :author_id)
   end
 end

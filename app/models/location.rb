@@ -18,4 +18,8 @@ class Location < ApplicationRecord
       .where("longitude > ?", bounds[:southWest][:lng])
       .where("longitude < ?", bounds[:northEast][:lng])
   end
+
+  def average_rating
+    Integer(reviews.average(:rating))
+  end
 end

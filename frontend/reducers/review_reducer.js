@@ -12,7 +12,7 @@ const reviewReducer = (state = {}, action) => {
       return merge({}, state, {[action.payload.review.id ]: action.payload.review});
     case DELETE_REVIEW:
       let newState = merge({}, state);
-      delete newstate[action.id];
+      delete newState[action.payload.review.id];
       return newState;
     default:
       return state;

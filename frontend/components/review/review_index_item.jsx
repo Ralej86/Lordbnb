@@ -36,6 +36,7 @@ class ReviewIndexItem extends React.Component {
 
           <div className="edit-form-cont">
             <form className="review-edit-form">
+
               <textarea
                 value={review.comment}
                 placeholder="Edit your Review"
@@ -116,7 +117,6 @@ class ReviewIndexItem extends React.Component {
         </div>
       );
     } else {
-      debugger
       return (
         <div>
           {this.renderReview()}

@@ -5,11 +5,10 @@ import { updateReview, destroyReview } from '../../actions/review_actions';
 import { withRouter } from 'react-router';
 
 const msp = (state, {locationId}) => {
-  debugger
   const currentLocation = state.entities.locations[locationId];
   const reviews = Object.values(state.entities.reviews);
   const users = state.entities.users;
-  const currentUser = state.entities.users[state.session.id];
+  const currentUser = state.entities.users[state.session.id] || {};
 
   return ({
     currentLocation,

@@ -9,7 +9,7 @@ export const postReview = review => (
 export const patchReview = review => (
   $.ajax({
     method: 'PATCH',
-    url: `/api/review/${review.id}`,
+    url: `/api/reviews/${review.id}`,
     data: { review }
   })
 )
@@ -18,6 +18,6 @@ export const patchReview = review => (
 export const deleteReview = id => (
   $.ajax({
     method: 'DELETE',
-    url: `/api/review/${id}`,
+    url: `/api/reviews/${id}`,
   })
 )

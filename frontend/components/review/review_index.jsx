@@ -6,10 +6,8 @@ class ReviewIndex extends React.Component {
 
 
   render () {
-    console.log(this.props.currentLocation);
-    debugger
     if (!this.props.currentLocation) {
-      return "IM NOT RENDERING";
+      return <div>loading...</div>;
     }
 
     return (
