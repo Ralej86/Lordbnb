@@ -19,7 +19,8 @@ end
 json.reviews do
   @location.reviews.includes(:author).each do |review|
     json.set! review.id do
-      json.extract! review, :id, :title, :body, :rating, :author_id, :created_at
+      json.extract! review, :id, :title, :body, :rating, :author_id
+      json.created_at review.created_at.strftime("%d-%m-%Y")
     end
   end
 end

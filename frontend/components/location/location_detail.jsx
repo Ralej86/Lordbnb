@@ -1,14 +1,16 @@
 import React from 'react';
 
 import ReviewIndexContainer from '../review/review_index_container';
+import CreateReviewContainer from '../review/create_review_container';
 
 class LocationDetail extends React.Component{
   constructor(props) {
     super(props)
+
   }
 
   componentDidMount() {
-    this.props.fetchLocation(this.props.match.params.locationId);
+    this.props.fetchLocation(this.props.match.params.locationId)
   }
 
   componentWillReceiveProps(nextProps) {
@@ -17,8 +19,8 @@ class LocationDetail extends React.Component{
     }
   }
 
-  render() {;
-    if (this.props.users === undefined || Object.values(this.props.users).length === 0) {
+  render() {
+    if (!this.props.location || !this.props.users[this.props.location.user_id]) {
       return <div>loading...</div>;
     }
 
@@ -56,6 +58,8 @@ class LocationDetail extends React.Component{
               <div className="reviews">
                 REVIEWS GO HERE
                 <ReviewIndexContainer locationId={this.props.location.id}/>
+                <CreateReviewContainer />
+
               </div>
             </div>
             <div className="booking-form">

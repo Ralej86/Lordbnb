@@ -19,7 +19,8 @@ const mapStateToProps = (state, ownProps) =>  {
 }
 
 const mapDispatchToProps = dispatch => ({
-  fetchLocation: id => dispatch(fetchLocation(id))
+  fetchLocation: id => dispatch(fetchLocation(id)),
+  createReview: formReview => dispatch(createReview(formReview))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(LocationDetail);

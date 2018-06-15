@@ -17,18 +17,20 @@
   flex-direction: row;
   justify-content: space-between;
   height: 30%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .review-title {
 }
 
 .review-title h3 {
+  margin: 5px 0 5px;
 }
 
 .review-title p {
   font-size: 14px;
   font-style: italic;
+  padding: 5px 0 5px;
 }
 
 .review-user {
@@ -46,4 +48,50 @@
 }
 
 .review-body {
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.review-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.review-form form label {
+  padding: 5px 0 5px;
+}
+
+.review-form form label input {
+  border-radius: 5%;
+  margin-left: 5px;
+  border-bottom: 1px solid black;
+}
+
+.review-form-title {
+  width: 40%;
+
+}
+.review-form-rating {
+  width: 60px
+}
+
+.review-form-body {
+  height: 300px;
+  margin: 5px 0px 20px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  padding-bottom: 10px;
+}
+
+.review-form-submit {
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
 }

@@ -1,4 +1,4 @@
-class Api::Reviews:Controller < ApplicationController
+class Api::ReviewsController < ApplicationController
   def index
     @reviews = Review.all
   end
@@ -28,6 +28,7 @@ class Api::Reviews:Controller < ApplicationController
       render :show
     else
       render json: @review.errors.full_messages, status:422
+    end
   end
 
   private
