@@ -25,6 +25,9 @@ class CreateReview extends React.Component {
   }
 
   render () {
+    if (!this.props.currentUser) {
+      return null
+    } else {
     return (
       <div className="review-form">
         <h3>Leave a Review!</h3>
@@ -60,6 +63,7 @@ class CreateReview extends React.Component {
         </form>
       </div>
     )
+  }
   }
 }
 

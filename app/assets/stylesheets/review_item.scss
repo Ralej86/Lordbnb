@@ -34,7 +34,9 @@
 }
 
 .review-user {
+  display:flex;
   align-items: center;
+  flex-direction: column;
 }
 
 .review-user img {
@@ -44,7 +46,7 @@
 }
 
 .review-user p {
-
+font-size: 12px;
 }
 
 .review-body {

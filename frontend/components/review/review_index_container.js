@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 
 import ReviewIndex from './review_index';
+import { updateReview, destroyReview } from '../../actions/review_actions';
 
 const msp = (state, locationId) => {
   const currentLocation = state.entities.locations[locationId];

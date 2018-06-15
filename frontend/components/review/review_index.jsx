@@ -5,6 +5,7 @@ import ReviewIndexItem from './review_index_item'
 class ReviewIndex extends React.Component {
 
   render () {
+    debugger
     return (
       <div className="review-index">
         <ul>
@@ -14,6 +15,8 @@ class ReviewIndex extends React.Component {
               currentLocation={this.props.currentLocation}
               review={review}
               users={this.props.users}
+              updateReview={this.props.updateReview}
+              deleteReview={this.props.deleteReview}
               />
           )}
         </ul>

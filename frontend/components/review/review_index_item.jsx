@@ -1,7 +1,12 @@
 import React from 'react';
 
 class ReviewIndexItem extends React.Component {
+  constructor(props) {
+    super(props)
+    // this.state = currentReview
+  }
   render () {
+    debugger
     return (
       <li>
         <div className="review-index-item">
