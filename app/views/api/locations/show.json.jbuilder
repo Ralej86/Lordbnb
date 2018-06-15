@@ -14,8 +14,6 @@ json.users do
 end
 
 
-# @location.reviews.each do |review|
-
 json.reviews do
   @location.reviews.includes(:author).each do |review|
     json.set! review.id do

@@ -6,16 +6,20 @@ import CreateReviewContainer from '../review/create_review_container';
 class LocationDetail extends React.Component{
   constructor(props) {
     super(props)
-
+    this.state={};
   }
 
   componentDidMount() {
+    debugger
     this.props.fetchLocation(this.props.match.params.locationId)
   }
 
   componentWillReceiveProps(nextProps) {
     if (this.props.match.params.locationId !== nextProps.match.params.locationId) {
       this.props.fetchLocation(nextProps.match.params.locationId)
+    }
+    if (this.props.reviews !== nextProps.reviews) {
+      this.setState({});
     }
   }
 
