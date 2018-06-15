@@ -6,7 +6,6 @@ class ReviewIndexItem extends React.Component {
     // this.state = currentReview
   }
   render () {
-    debugger
     return (
       <li>
         <div className="review-index-item">
