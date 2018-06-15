@@ -5,10 +5,11 @@
 }
 
 .location-cont-title {
+  margin: 20px 0px 0px 20px;
 }
 
 .location-cont-title h2 {
-  padding: 5px;
+  padding: 5px 0 5px;
   font-weight: 700;
   font-size: 22px;
 }
@@ -29,19 +30,31 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
-  width: 30%;
-  min-width: 150px;
+  height: 300px;
+  width: 23%;
+  min-width: 100px;
   margin: 0 10px 25px 10px;
 }
 
 .location-cont-index-item-image {
-  height: 60%;
+  height: 180px;
+  width: 100%;
+}
+
+.location-cont-index-item a {
+  height: 180px;
+  width: 100%;
+}
+
+.location-cont-index-item-image img {
+  height: 180px;
   width: 100%;
 }
 
 .location-cont-index-item-detail {
   font-weight: 600;
   font-size: 18px;
+  color: teal;
 }
 
 .location-cont-index-item-name {
@@ -50,9 +63,10 @@
 }
 
 .location-cont-index-item-price {
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .location-cont-item-rating {
   font-size: 12px;
+  color: darkblue;
 }
