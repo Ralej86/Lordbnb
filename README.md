@@ -14,23 +14,23 @@ Lordbnb is a Lord of the Rings themed clone of [Airbnb](https://www.airbnb.com/ 
 ### Interactive Map
 
 Moving the map around can filter locations dynamically while you're on the page
-![Interactive Map 2 locations](/home/ralej86/Documents/AppAcadamey BootCamp/aA-full-stack-project/airbnb_clone/app/assets/images/map1.png)
+![Interactive Map 2 locations](app/assets/images/map1.png)
 Map with 2 locations
 
-![Interactive Map 1 location](/home/ralej86/Documents/AppAcadamey BootCamp/aA-full-stack-project/airbnb_clone/app/assets/images/map2.png)
+![Interactive Map 1 location](app/assets/images/map2.png)
 Map with a single location
 
 ### Users can leave reviews
 
-![Reviews while logged in](/home/ralej86/Documents/AppAcadamey BootCamp/aA-full-stack-project/airbnb_clone/app/assets/images/comment1.png)
+![Reviews while logged in](app/assets/images/comment1.png)
 Review Form with a sample review
 
-![Review edited](/home/ralej86/Documents/AppAcadamey BootCamp/aA-full-stack-project/airbnb_clone/app/assets/images/comment2.png)
+![Review edited](app/assets/images/comment2.png)
 Swapping the review for an edit review form
 
 
 Implementation of a Modal for the login and signup of a user
-![Login](/home/ralej86/Documents/AppAcadamey BootCamp/aA-full-stack-project/airbnb_clone/app/assets/images/login.png)
+![Login](app/assets/images/login.png)
 
 ## Project Design
 
