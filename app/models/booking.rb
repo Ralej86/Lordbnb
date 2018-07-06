@@ -13,4 +13,12 @@ class Booking < ApplicationRecord
   def ensure_guests
     self.guests ||= 1
   end
+
+  def overlapping_requests
+  end
+
+  def start_must_come_before_end
+    break if :start_date < :end_date
+    errors[:start_date] << 
+  end
 end

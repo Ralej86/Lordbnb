@@ -1,6 +1,7 @@
 class Api::BookingsController < ApplicationController
   def show
     @bookings = current_user.bookings
+    render :index
   end
 
   def create
@@ -9,12 +10,18 @@ class Api::BookingsController < ApplicationController
     if @booking.save
       render :show
     else
-      render json: @booking.errors.full_messages, status: 422
+      if @booking.start_date > @booking.end_date
+        render json: ['Booking check in should come before end date'], status: 422
+      elsif @booking.end_date < @booking.start_date
+        render json: ['Booking end date should come after check in date'], status: 422
+      else
+        render json: @booking.errors.full_messages, status: 422
+      end
     end
   end
 
   def update
-    @booking = current_user.reviews.find_by)id: Integer(params[:id])
+    @booking = current_user.reviews.find_by(id: Integer(params[:id]))
     if @booking.update_attributes(booking_params)
       render :show
     else
