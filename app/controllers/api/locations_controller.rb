@@ -18,7 +18,6 @@ class Api::LocationsController < ApplicationController
     # end
 
     @locations = locations
-    # debugger
     render :index
   end
 
