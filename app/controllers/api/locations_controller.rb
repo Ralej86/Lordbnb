@@ -6,16 +6,6 @@ class Api::LocationsController < ApplicationController
     else
       locations = Location.in_bounds(params[:bounds])
     end
-    # locations = Location.in_bounds(params[:bounds]) || Location.all
-
-    # locations = bounds ? Location.in_bounds(bounds) : Location.all
-    # debugger
-    # locations = Location.in_bounds(bounds)
-
-
-    # if params[:minSeating] && params[:maxSeating]
-    #   locations = locations.where(seating: seating_range)
-    # end
 
     @locations = locations
     render :index
