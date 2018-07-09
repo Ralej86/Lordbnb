@@ -20,14 +20,14 @@ class Api::BookingsController < ApplicationController
     end
   end
 
-  def update
-    @booking = current_user.reviews.find_by(id: Integer(params[:id]))
-    if @booking.update_attributes(booking_params)
-      render :show
-    else
-      render json: @booking.errors.full_messages, status: 422
-    end
-  end
+  # def update
+  #   @booking = current_user.reviews.find_by(id: Integer(params[:id]))
+  #   if @booking.update_attributes(booking_params)
+  #     render :show
+  #   else
+  #     render json: @booking.errors.full_messages, status: 422
+  #   end
+  # end
 
   def destroy
     @booking = Booking.find(params[:id])

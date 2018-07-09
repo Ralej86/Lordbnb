@@ -11,7 +11,7 @@ class User < ApplicationRecord
     foreign_key: :author_id,
     class_name: 'Review'
 
-  has_many: :bookings,
+  has_many :bookings,
     foreign_key: :guest_id,
     class_name: 'Booking'
 
