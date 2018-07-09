@@ -25,7 +25,7 @@ const receiveErrors = errors => ({
   errors
 })
 
-export const receiveBookings = currentUser => dispatch => (
+export const fetchBookings = currentUser => dispatch => (
   BookingApiUtils.getBookings(currentUser).then(
     payload => dispatch(receiveBookings(payload))
   )

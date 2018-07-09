@@ -2,7 +2,7 @@ import merge from 'lodash/merge';
 
 import { RECEIVE_BOOKINGS,
   RECEIVE_BOOKING,
-  DELETE_BOOKING }; from '../actions/booking_actions';
+  DELETE_BOOKING } from '../actions/booking_actions';
 
 const bookingReducer = (state = {}, action) => {
   Object.freeze(state);
