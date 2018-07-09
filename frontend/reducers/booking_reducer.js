@@ -20,4 +20,4 @@ const bookingReducer = (state = {}, action) => {
   }
 }
 
-export default bookingReducer
+export default bookingReducer;

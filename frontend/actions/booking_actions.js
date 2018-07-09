@@ -27,7 +27,8 @@ const receiveErrors = errors => ({
 
 export const receiveBookings = currentUser => dispatch => (
   BookingApiUtils.getBookings(currentUser).then(
-    payload => dispatch(receiveBookings(payload)))
+    payload => dispatch(receiveBookings(payload))
+  )
 )
 
 export const createBooking = bookingForm => dispatch => (
