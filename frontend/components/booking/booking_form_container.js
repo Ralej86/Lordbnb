@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import BookingForm from './booking_form';
 import { createBooking } from '../../actions/booking_actions';
+import { withRouter } from 'react-router';
 
 const msp = (state, ownProps) => {
   let currentLocation = state.entities.locations[ownProps.match.params.locationId]
@@ -13,7 +14,8 @@ const msp = (state, ownProps) => {
 }
 
 const mdp = dispatch => ({
-  createBooking: formBooking => dispatch(createBooking(formBooking))
+  createBooking: formBooking => dispatch(createBooking(formBooking)),
+  clearErrors: () => dispatch(receiveErrors([]))
 })
 
-export default(connect(msp, mdp)(BookingForm));
+export default(connect(msp, mdp)(withRouter(BookingForm)));
