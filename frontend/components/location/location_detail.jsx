@@ -2,6 +2,7 @@ import React from 'react';
 
 import ReviewIndexContainer from '../review/review_index_container';
 import CreateReviewContainer from '../review/create_review_container';
+import BookingFormContainer from '../booking/booking_form_container';
 
 class LocationDetail extends React.Component{
   constructor(props) {
@@ -23,7 +24,6 @@ class LocationDetail extends React.Component{
     if (!this.props.location || !this.props.users[this.props.location.user_id]) {
       return <div>loading...</div>;
     }
-
     return (
       <div className="location-detail-cont">
         <div className="location-detail-image">
@@ -58,11 +58,10 @@ class LocationDetail extends React.Component{
                 <h2>REVIEWS</h2>
                 <ReviewIndexContainer locationId={this.props.location.id}/>
                 <CreateReviewContainer />
-
               </div>
             </div>
             <div className="booking-form">
-              booking would go here...if i had one
+              <BookingFormContainer />
             </div>
           </div>
         </div>

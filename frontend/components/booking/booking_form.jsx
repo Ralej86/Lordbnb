@@ -6,8 +6,8 @@ class BookingForm extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      start_date = moment(),
-      end_date = moment().add(30, 'days'),
+      start_date: moment(),
+      end_date: moment().add(30, 'days'),
       guests: 1,
       location_id: this.props.currentLocation.id,
       guest_id: this.props.currentUser
@@ -19,7 +19,7 @@ class BookingForm extends React.Component {
 
   componentDidMount() {
     this.setState({
-      checkInErrors: document.getElementById("checkInErrors")
+      checkInErrors: document.getElementById("checkInErrors"),
       checkOutErrors: document.getElementById("checkOutErrors")
     })
   }
@@ -34,17 +34,17 @@ class BookingForm extends React.Component {
     }
   }
 
-  renderErrors() {
-    return (
-      <ul className='session-errors'>
-        {this.props.errors.map((error, i) => (
-          <li key={`error-${i}`}>
-            {error}
-          </li>
-        ))}
-      </ul>
-    );
-  }
+  // renderErrors() {
+  //   return (
+  //     <ul className='session-errors'>
+  //       {this.props.errors.map((error, i) => (
+  //         <li key={`error-${i}`}>
+  //           {error}
+  //         </li>
+  //       ))}
+  //     </ul>
+  //   );
+  // }
 
   handleChangeStart(date) {
     if (this.state.end_date.diff(date) < 0) {
@@ -103,13 +103,14 @@ class BookingForm extends React.Component {
       e => { this.setState({[field]: e.target.value})}
     )
   }
+  // goes after booking-container-form div on line 112
+  // {this.renderErrors()}
 
   render() {
     return(
       <form onSubmit={this.handleSubmit}>
         <div className="booking-form">
           <div className="booking-container-form">
-            {this.renderErrors()}
 
             <div className="start-end-time">
               <div className="check-in-container">

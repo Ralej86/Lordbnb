@@ -21,9 +21,9 @@ json.reviews do
     end
   end
 end
-#
+
 # json.bookings do
-#   @location.bookings.each do |booking|
+#   @location.bookings.includes(:user).each do |booking|
 #     json.set! booking.id do
 #       json.extract! booking, :id, :guest_id, :location_id, :start_date, :end_date, :guests
 #     end

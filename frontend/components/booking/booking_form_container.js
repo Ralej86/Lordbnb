@@ -18,4 +18,4 @@ const mdp = dispatch => ({
   clearErrors: () => dispatch(receiveErrors([]))
 })
 
-export default(connect(msp, mdp)(withRouter(BookingForm)));
+export default withRouter(connect(msp, mdp)(BookingForm));
