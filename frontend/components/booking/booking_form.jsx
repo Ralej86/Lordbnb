@@ -110,10 +110,11 @@ class BookingForm extends React.Component {
         <div className="booking-form">
           <div className="booking-container-form">
             {this.renderErrors()}
+
             <div className="start-end-time">
               <div className="check-in-container">
                 <div className="check-in-check-out-label">Check In</div>
-                <DatePicker className="picker"
+                <DatePicker className="check-in-picker"
                   minDate={moment()}
                   maxDate={this.state.end_date}
                   selected={this.state.start_date}
@@ -125,12 +126,38 @@ class BookingForm extends React.Component {
                 <p id="checkInErrors">Can't pick a check-in date after check out</p>
               </div>
 
-              
+              <div className="check-out-container">
+                <div className="check-out-label">Check Out</div>
+                <DatePicker className="check-out-picker"
+                  minDate={this.state.start_date}
+                  selected={this.state.end_date}
+                  selectsEnd
+                  stat_date={this.state.start_in}
+                  end_date={this.state.end_date}
+                  onChange={this.handleChangeEnd}
+                  placeholderText="Select a date"/>
+                  <p id="checkOutErrors">Can't pick a check out date before check in</p>
+              </div>
             </div>
+
+            <label className='check-in-out guests-label'>
+              <div className='please'>
+                  <div className="booking-guests">Guests</div>
+                  <div className='minusplusguests'>
+                    <a className='minus' onClick={this.handleStep('-')}> - </a><p> {this.state.num_guest} </p><a className='minus' onClick={this.handleStep('+')}> + </a>
+                  </div>
+              </div>
+            </label>
+
           </div>
+
+          <input className='book-now-button'type='submit' value="Book Now!" />
+
         </div>
       </form>
     )
   }
 
 }
+
+export default BookingForm;
