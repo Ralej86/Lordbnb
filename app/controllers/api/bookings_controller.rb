@@ -35,10 +35,11 @@ class Api::BookingsController < ApplicationController
       render :show
     else
       render json: @booking.errors.full_messages, status: 422
+    end
   end
 
   private
   def booking_params
-    params.require(:booking).permit(:guests, :start_date, :end_date, :location_id)
+    params.require(:booking).permit(:guests, :start_date, :end_date, :location_id, :guest_id)
   end
 end

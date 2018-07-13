@@ -15,7 +15,7 @@ export const getBookings = currentUser => (
 export const postBooking = booking => (
   $.ajax({
     method: 'POST',
-    url: '/api/locations//bookings',
+    url: '/api/bookings',
     data: { booking }
   })
 );

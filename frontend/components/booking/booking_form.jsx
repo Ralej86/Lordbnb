@@ -93,9 +93,10 @@ class BookingForm extends React.Component {
        end_date: this.state.end_date.format(),
        guests: this.state.guests,
        location_id: this.state.location_id,
-       guest_id: this.state.guest_id,
+       guest_id: this.state.guest_id.id,
      }
-     // this.props.createBooking(submission).then(() => this.props.history.push(`/user/${this.state.guest_id}`));
+     this.props.createBooking(submission);
+     // .then(() => this.props.history.push(`/user/${this.state.guest_id}`));
    }
 
   update(field) {
