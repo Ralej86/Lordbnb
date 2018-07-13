@@ -6,10 +6,12 @@ import { withRouter } from 'react-router';
 const msp = (state, ownProps) => {
   let currentLocation = state.entities.locations[ownProps.match.params.locationId]
   let currentUser = state.entities.users[state.session.id]
+  let errors = state.errors.booking
 
   return ({
     currentLocation,
-    currentUser
+    currentUser,
+    errors
   })
 }
 

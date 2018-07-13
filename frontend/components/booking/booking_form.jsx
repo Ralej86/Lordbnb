@@ -34,17 +34,17 @@ class BookingForm extends React.Component {
     }
   }
 
-  // renderErrors() {
-  //   return (
-  //     <ul className='session-errors'>
-  //       {this.props.errors.map((error, i) => (
-  //         <li key={`error-${i}`}>
-  //           {error}
-  //         </li>
-  //       ))}
-  //     </ul>
-  //   );
-  // }
+  renderErrors() {
+    return (
+      <ul className='session-errors'>
+        {this.props.errors.map((error, i) => (
+          <li key={`error-${i}`}>
+            {error}
+          </li>
+        ))}
+      </ul>
+    );
+  }
 
   handleChangeStart(date) {
     if (this.state.end_date.diff(date) < 0) {
@@ -104,17 +104,17 @@ class BookingForm extends React.Component {
     )
   }
   // goes after booking-container-form div on line 112
-  // {this.renderErrors()}
 
   render() {
     return(
       <form onSubmit={this.handleSubmit}>
         <div className="booking-form">
+          {this.renderErrors()}
           <div className="booking-container-form">
 
             <div className="start-end-time">
               <div className="check-in-container">
-                <div className="check-in-check-out-label">Check In</div>
+                <div className="check-in-out-label">Check In</div>
                 <DatePicker className="check-in-picker"
                   minDate={moment()}
                   maxDate={this.state.end_date}
@@ -128,13 +128,13 @@ class BookingForm extends React.Component {
               </div>
 
               <div className="check-out-container">
-                <div className="check-out-label">Check Out</div>
+                <div className="check-in-out-label">Check Out</div>
                 <DatePicker className="check-out-picker"
                   minDate={this.state.start_date}
                   selected={this.state.end_date}
                   selectsEnd
-                  stat_date={this.state.start_in}
-                  end_date={this.state.end_date}
+                  check_in={this.state.start_in}
+                  check_out={this.state.end_date}
                   onChange={this.handleChangeEnd}
                   placeholderText="Select a date"/>
                   <p id="checkOutErrors">Can't pick a check out date before check in</p>
@@ -145,7 +145,7 @@ class BookingForm extends React.Component {
               <div className='please'>
                   <div className="booking-guests">Guests</div>
                   <div className='minusplusguests'>
-                    <a className='minus' onClick={this.handleStep('-')}> - </a><p> {this.state.num_guest} </p><a className='minus' onClick={this.handleStep('+')}> + </a>
+                    <a className='minus' onClick={this.handleStep('-')}> - </a><p> {this.state.guests} </p><a className='minus' onClick={this.handleStep('+')}> + </a>
                   </div>
               </div>
             </label>

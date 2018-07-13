@@ -60,7 +60,7 @@ class LocationDetail extends React.Component{
                 <CreateReviewContainer />
               </div>
             </div>
-            <div className="booking-form">
+            <div className="booking-form-container">
               <BookingFormContainer />
             </div>
           </div>
