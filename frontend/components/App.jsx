@@ -34,6 +34,7 @@ const App = () => (
       <Route exact path="/locations/:locationId" component={ LocationDetailContainer } />
       <Route exact path="/" component={ SplashPage } />
       <Route path='/map' component={ SearchContainer } />
+      <Route exact path="/users/:userId" component= { UserBookingContainer }/>
       <Route exact path="/locations" component={ LocationIndexContainer } />
     </Switch>
 
