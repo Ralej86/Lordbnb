@@ -10,7 +10,7 @@ class BookingForm extends React.Component {
       end_date: moment().add(30, 'days'),
       guests: 1,
       location_id: this.props.currentLocation.id,
-      guest_id: this.props.currentUser
+      guest_id: this.props.currentUser.id
     }
     this.handleChangeStart = this.handleChangeStart.bind(this);
     this.handleChangeEnd = this.handleChangeEnd.bind(this);
@@ -24,13 +24,13 @@ class BookingForm extends React.Component {
     })
   }
 
-  componentWillUnmount() {
-    this.props.clearErrors();
-  }
+  // componentWillUnmount() {
+  //   this.props.clearErrors();
+  // }
 
   componentWillReceiveProps(nextProps) {
-    if (this.state.props.currentUser !== nextProps.currentUser) {
-      this.setState({guest_id: newProps.currentUser})
+    if (this.props.currentUser != nextProps.currentUser) {
+      this.setState({guest_id: nextProps.currentUser})
     }
   }
 
