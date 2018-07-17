@@ -10,11 +10,13 @@ const mapStateToProps = (state, ownProps) =>  {
     users = state.entities.users;
   }
   let reviews = state.entities.reviews;
+  let currentUser = state.entities.users[state.session.id];
 
   return {
     location,
     users,
-    reviews
+    reviews,
+    currentUser
   }
 }
 

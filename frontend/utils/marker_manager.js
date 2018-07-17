@@ -14,7 +14,6 @@ export default class MarkerManager {
 
     Object.keys(this.markers).filter(locationId => !locationsObj[locationId])
     .forEach((locationId) => this.removeMarker(this.markers[locationId]))
-    console.log('time to update?');
   }
 
   createMarkerFromLocation(location) {
