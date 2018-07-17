@@ -8,28 +8,31 @@ Lordbnb is a Lord of the Rings themed clone of [Airbnb](https://www.airbnb.com/ 
 
 * User Authentication
   * Lordbnb's user authentication uses the `BCrypt gem`.
-* A moving map that dynamically generates index information.
+* A moving map that dynamically generates index information using Google Maps API.
 * Logged in users can create, update, view, and delete reviews for the locations.
+* Users can create a booking for a desired location.
+
 
 ### Interactive Map
 
-Moving the map around can filter locations dynamically while you're on the page
+Moving the map around can filter locations dynamically while you're on the page.
 ![Interactive Map 2 locations](app/assets/images/map1.png)
 Map with 2 locations
 
 ![Interactive Map 1 location](app/assets/images/map2.png)
 Map with a single location
 
+This feature was implemented by applying location filters based on the coordinates of the corners of the map view.  Using the four corners as guiding points, only locations with latitude and longitude coordinates within that area are displayed.
+
 ### Users can leave reviews
 
+Review Form with a sample review.  Swapping the review for an edit review form.
+Users can easily edit their comments by hitting the edit review button.
 ![Reviews while logged in](app/assets/images/comment1.png)
-Review Form with a sample review
 
-![Review edited](app/assets/images/comment2.png)
-Swapping the review for an edit review form
+Reviews display a full CRUD implementation.
 
-
-Implementation of a Modal for the login and signup of a user
+Implementation of a Modal for the login and signup of a user.  Using a modal gives a quicker, snappier, and more responsive feel to the website rather than directing the user to another location.
 ![Login](app/assets/images/login.png)
 
 ## Project Design
@@ -48,11 +51,9 @@ Google Maps API was implemented to register markers with custom latitude and lon
 
 In the future I want to implement:
 
-* Booking Capability
-  * Users would be able to create and cancel bookings on their account for specified locations
 * User Profiles
   * Add the ability to view host profiles
-  * User profile can show their current bookings
+  * User profile can view all of their current bookings
 * Search Capability
   * A search bar to find make navigating the site even easier and faster
 * More Map interaction
