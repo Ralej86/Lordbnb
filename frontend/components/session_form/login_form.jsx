@@ -49,7 +49,7 @@ class LoginForm extends React.Component {
                 {this.renderErrors()}
               </div>
             <label>
-              <input type="text"
+              <input type="email"
                 value={this.state.email}
                 onChange={this.update('email')}
                 className="session-input"

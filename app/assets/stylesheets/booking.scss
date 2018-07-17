@@ -1,0 +1,146 @@
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  padding: 10px 25px 10px 25px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.please {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 0 15px;
+}
+
+.minusplusguests{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 22px;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.minus {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.booking-container-form {
+  font-size: 13px;
+  border-radius: 3px;
+
+  width: 390px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.user-booking {
+  border-bottom: 2px solid rgb(229, 229, 229);
+}
+
+.start-end-time {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.check-in-container {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+
+
+.check-out-container {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid rgb(229, 229, 229);
+  border-right: 1px solid rgb(229, 229, 229);
+  padding-left: 25px;
+  padding-right: 5px;
+  width: 150px;
+}
+
+.form-input {
+  width: 50px;
+}
+
+.check-in-out-label {
+  padding-right: 10px;
+  padding-bottom: 5px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.check-in-picker {
+  font-size: 16px;
+}
+
+.check-out-picker {
+  font-size: 16px;
+}
+
+#checkInErrors {
+  font-size: 14px;
+}
+
+#checkOutErrors {
+  font-size: 14px;
+}
+
+// .booking-listing-name {
+//   font-size: 18px;
+// }
+//
+// .booking-detail-labels {
+//   margin-top: 30px;
+//   margin-left: 20px;
+//
+//   li {
+//     margin-bottom: 10px;
+//   }
+// }
+
+
+// .booking-details {
+//   margin-left: 25px;
+//   margin-top: 30px;
+//
+//   li {
+//     margin-bottom: 10px;
+//   }
+//
+// }
+
+.guests-label {
+  font-weight: bold;
+}
+
+.booking-guests {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+
+
+.book-now-button {
+  width: 390px;
+  border: 1px grey;
+  // font-size: 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 3px;
+  background-color: rgb(255, 95, 95);;
+  color: white;
+  height: 30px;
+  margin-bottom: 10px;
+  margin-right: 40%;
+  text-align: center;
+  padding-right: 0px;
+  margin-top: 10px;
+
+}
