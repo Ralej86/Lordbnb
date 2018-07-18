@@ -7,7 +7,8 @@ const SplashPage = () => {
       <Link to="/locations" className="background.image">
         <img src="http://www.theonering.net/torwp/wp-content/uploads/2013/07/lord-of-the-rings-fellowship-of-the-ring-the-silhouettes.jpg"/>
       </Link>
-      <p>Click Anywhere To Begin Your Journey</p>
+      <a className="splash-text" href="/locations">One Vacation Spot to Host Them All</a>
+
     </div>
   )
 }

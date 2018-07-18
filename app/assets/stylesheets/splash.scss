@@ -9,16 +9,15 @@
 }
 
 .background-image {
-  position:absolute;
+  position: absolute;
+  object-fit: cover;
   height: 100vh;
 }
 
-.background p {
+.splash-text {
   position: absolute;
-  bottom: 55%;
-  left: 35%;
-  color:inherit;
-  font-family: 'Cinzel', serif;
-  font-size: 26px;
-  border-radius: 50%;
+  bottom: 54%;
+  left: 30%;
+  color: black;
+  font-size: 50px;
 }
