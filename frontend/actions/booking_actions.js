@@ -15,7 +15,7 @@ const receiveBooking = payload => ({
   payload
 })
 
-const deleteBooking = booking => ({
+const removeBooking = booking => ({
   type: DELETE_BOOKING,
   booking
 })
@@ -41,6 +41,6 @@ export const createBooking = bookingForm => dispatch => (
 
 export const deleteBooking = id => dispatch => (
   BookingApiUtils.deleteBooking(id).then(
-    payload => dispatch(deleteBooking(payload))
+    payload => dispatch(removeBooking(payload))
   )
 )
