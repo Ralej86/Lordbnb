@@ -1,4 +1,5 @@
 import React from 'react';
+import BookingIndexItem from './booking_index_item';
 
 class BookingIndex extends React.Component {
   componentDidMount() {
@@ -36,3 +37,5 @@ class BookingIndex extends React.Component {
     }
   }
 }
+
+export default BookingIndex;
