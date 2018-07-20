@@ -39,7 +39,7 @@ export const createBooking = bookingForm => dispatch => (
   )
 )
 
-export const destroyBooking = id => dispatch => (
+export const deleteBooking = id => dispatch => (
   BookingApiUtils.deleteBooking(id).then(
     payload => dispatch(deleteBooking(payload))
   )
