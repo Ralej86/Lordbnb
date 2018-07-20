@@ -28,9 +28,7 @@ class BookingIndex extends React.Component {
         <div className="bookings-container">
           <h2>Your Trips</h2>
           <div className="bookings">
-            <ul>
-              { bookings }
-            </ul>
+            { bookings }
           </div>
         </div>
     )
