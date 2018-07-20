@@ -3,7 +3,7 @@ import BookingIndex from './booking_index';
 import { fetchBookings, deleteBooking } from '../../actions/booking_actions';
 
 const msp = state => {
-  bookings: state.entities.bookings,
+  bookings: Object.values(state.entities.bookings),
   currentUser: state.entities.users[state.session.id]
 }
 
