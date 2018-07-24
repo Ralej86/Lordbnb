@@ -14,6 +14,7 @@ class BookingIndex extends React.Component {
         </div>
       )
     } else {
+      // debugger
       let bookings = this.props.bookings.map( booking => {
         return (
           <BookingIndexItem
