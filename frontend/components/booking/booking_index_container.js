@@ -2,14 +2,14 @@ import { connect } from 'react-redux';
 import BookingIndex from './booking_index';
 import { fetchBookings, deleteBooking } from '../../actions/booking_actions';
 
-const msp = state => {
+const msp = state => ({
   bookings: Object.values(state.entities.bookings),
   currentUser: state.entities.users[state.session.id]
-}
+})
 
-const mdp = dispatch => (
+const mdp = dispatch => ({
   fetchBookings: currentUser => dispatch(fetchBookings(currentUser)),
   deleteBooking: booking => dispatch(deleteBooking(booking))
-)
+})
 
 export default connect(msp, mdp)(BookingIndex);

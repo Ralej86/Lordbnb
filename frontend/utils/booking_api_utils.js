@@ -1,7 +1,7 @@
 export const getBookings = currentUser => (
   $.ajax({
     method: 'GET',
-    url: `/api/bookings/${currentUser.id}`
+    url: "/api/bookings"
   })
 );
 

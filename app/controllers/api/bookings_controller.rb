@@ -1,5 +1,5 @@
 class Api::BookingsController < ApplicationController
-  def show
+  def index
     @bookings = current_user.bookings
     render :index
   end

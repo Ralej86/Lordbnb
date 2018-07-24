@@ -7,14 +7,14 @@ class BookingIndex extends React.Component {
   }
 
   render() {
-    if this.props.bookings.length < 1 {
+    if (this.props.bookings.length < 1) {
       return (
         <div className="no-bookings">
           <p>You have no bookings!</p>
         </div>
       )
     } else {
-      bookings = this.props.bookings.map( booking => {
+      let bookings = this.props.bookings.map( booking => {
         return (
           <BookingIndexItem
             key={booking.id}
