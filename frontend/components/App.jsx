@@ -19,7 +19,7 @@ const App = () => (
     <header className="header">
       <nav className="header-nav">
         <div className="header-nav-left">
-          <Link className ="header-nav-logo" to="/locations">
+          <Link className ="header-nav-logo" to="/map">
             <img src="https://vignette.wikia.nocookie.net/logopedia/images/5/5e/Nav-open-logo-lotr.png/revision/latest?cb=20160921000347"
               alt="LOTR-logo"></img>
           </Link>

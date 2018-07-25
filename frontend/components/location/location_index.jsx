@@ -8,6 +8,12 @@ class LocationIndex extends React.Component {
     }
   }
 
+// line 19-21
+// <div className="map-button">
+//   <a href="#/map">Show Map</a>
+// </div>
+
+
   render () {
     return (
       <div className="location-cont">
@@ -15,9 +21,6 @@ class LocationIndex extends React.Component {
           <div>
             <h2>Homes Around Middle Earth</h2>
             <h1>Explore some of the most exclusive houses available in Middle Earth</h1>
-          </div>
-          <div className="map-button">
-            <a href="#/map">Show Map</a>
           </div>
         </div>
         <br />

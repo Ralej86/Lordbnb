@@ -18,7 +18,6 @@ class BookingIndexItem extends React.Component {
       <li className="booking-location-date">Check-in: {this.props.booking.booking.start_date}</li>
       <li className="booking-location-date">Check-out: {this.props.booking.booking.end_date}</li>
       <button onClick={() => this.props.deleteBooking(this.props.booking.booking.id)}>Delete Booking</button>
-      <li className="booking-delete-button">delete button goes here</li>
     </ul>
   )
   }
