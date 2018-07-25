@@ -4,6 +4,7 @@ export const RECEIVE_ALL_BOOKINGS = 'RECEIVE_ALL_BOOKINGS';
 export const RECEIVE_BOOKING = 'RECEIVE_BOOKING';
 export const DELETE_BOOKING = 'DELETE_BOOKING';
 export const RECEIVE_BOOKING_ERRORS = 'RECEIVE_BOOKING_ERRORS';
+// export const CLEAR_BOOKINGS = 'CLEAR_BOOKINGS';
 
 const receiveBookings = payload => ({
   type: RECEIVE_ALL_BOOKINGS,
@@ -24,6 +25,10 @@ const receiveErrors = errors => ({
   type: RECEIVE_BOOKING_ERRORS,
   errors
 })
+
+// export const clearBookings = () => ({
+//   type: CLEAR_BOOKINGS
+// })
 
 export const fetchBookings = currentUser => dispatch => (
   BookingApiUtils.getBookings(currentUser).then(
