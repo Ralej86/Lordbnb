@@ -22,7 +22,7 @@ class LocationDetail extends React.Component{
 
   render() {
     if (!this.props.location || !this.props.users[this.props.location.user_id]) {
-      return <div>loading...</div>;
+      return <div>loading...</div>
     }
 
     if (this.props.currentUser) {
