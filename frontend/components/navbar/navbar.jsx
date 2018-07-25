@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Navbar = ({ currentUser, logout, openModal, demoLogin }) => {
+
+const Navbar = ({ currentUser, logout, openModal, demoLogin, clearBookings }) => {
 
   const noUserPresent = () => (
     <ul className="login-signup">
@@ -16,7 +17,7 @@ const Navbar = ({ currentUser, logout, openModal, demoLogin }) => {
   const userLoggedIn = () => (
     <nav className = "logout">
       <h2 className="logout-item"> Welcome, {currentUser.name} </h2>
-      <Link className="user-link" to={`/users/${currentUser.id}`}>Bookings</Link>
+      <Link className="user-link" onClick={clearBookings} to={`/users/${currentUser.id}`}>Bookings</Link>
       <button className="logout-item" onClick={logout}>Log Out</button>
     </nav>
   );

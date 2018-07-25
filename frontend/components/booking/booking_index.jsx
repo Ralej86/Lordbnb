@@ -6,13 +6,8 @@ class BookingIndex extends React.Component {
     this.props.fetchBookings(this.props.currentUser)
   }
 
-  // componentWillReceiveProps(nextProps) {
-  //   if (this.props.bookings !== nextProps.bookings) {
-  //     this.props.fetchBookings(nextProps.currentUser)
-  //   }
-  // }
-
   render() {
+    debugger
     if (this.props.bookings.length < 1) {
       return (
         <div className="no-bookings">

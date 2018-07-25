@@ -125,7 +125,7 @@ class BookingForm extends React.Component {
                   end_date={this.state.end_date}
                   onChange={this.handleChangeStart}
                   placeholderText='Select a date' />
-                <p id="checkInErrors">Can't pick a check-in date after check out</p>
+                <p style={{display: "none"}} id="checkInErrors">Can't pick a check-in date after check out</p>
               </div>
 
               <div className="check-out-container">
@@ -138,7 +138,7 @@ class BookingForm extends React.Component {
                   check_out={this.state.end_date}
                   onChange={this.handleChangeEnd}
                   placeholderText="Select a date"/>
-                  <p id="checkOutErrors">Can't pick a check out date before check in</p>
+                <p style={{display: "none"}} id="checkOutErrors">Can't pick a check out date before check in</p>
               </div>
             </div>
 
