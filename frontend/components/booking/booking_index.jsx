@@ -14,11 +14,11 @@ class BookingIndex extends React.Component {
         </div>
       )
     } else {
-      // debugger
+      debugger
       let bookings = this.props.bookings.map( booking => {
         return (
           <BookingIndexItem
-            key={booking.id}
+            key={booking.booking.id}
             booking={booking}
             currentUser={this.props.currentUser}
             deleteBooking={this.props.deleteBooking}

@@ -5,12 +5,12 @@ const BookingIndexItem = ({ booking }) => (
   <ul className="booking">
     <Link to={`/locations/${booking.booking.location_id}`}>
       <div className='booking-image'>
-        <p>Image goes here</p>
+        <img src={`${booking.location.image_url}`}/>
       </div>
     </Link>
-    <li className="booking-location-title"></li>
-    <li></li>
-    <li></li>
+    <li className="booking-location-title">{booking.location.name}</li>
+    <li className="booking-location-date">{booking.booking.start_date}</li>
+    <li className="booking-location-date">{booking.booking.end_date}</li>
   </ul>
 )
 
