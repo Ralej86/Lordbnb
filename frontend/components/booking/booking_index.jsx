@@ -7,7 +7,7 @@ class BookingIndex extends React.Component {
   }
 
   render() {
-    debugger
+    // debugger
     if (this.props.bookings.length < 1) {
       return (
         <div className="no-bookings">

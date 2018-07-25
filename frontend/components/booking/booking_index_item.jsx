@@ -20,6 +20,7 @@ class BookingIndexItem extends React.Component {
             <li className="booking-location-title">{this.props.booking.location.name}</li>
             <li className="booking-location-date">Check-in: {this.props.booking.booking.start_date}</li>
             <li className="booking-location-date">Check-out: {this.props.booking.booking.end_date}</li>
+            <li className="booking-location-guests">Guests: {this.props.booking.booking.guests}</li>
             <button onClick={() => this.props.deleteBooking(this.props.booking.booking.id)}>Delete Booking</button>
           </ul>
       )
