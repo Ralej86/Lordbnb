@@ -9,8 +9,10 @@ const BookingIndexItem = ({ booking }) => (
       </div>
     </Link>
     <li className="booking-location-title">{booking.location.name}</li>
-    <li className="booking-location-date">{booking.booking.start_date}</li>
-    <li className="booking-location-date">{booking.booking.end_date}</li>
+    <li className="booking-location-date">Check-in: {booking.booking.start_date}</li>
+    <li className="booking-location-date">Check-out: {booking.booking.end_date}</li>
+    <button onClick={() => this.props.deleteBooking(booking.booking.id)}>Delete Booking</button>
+    <li className="booking-delete-button">delete button goes here</li>
   </ul>
 )
 
