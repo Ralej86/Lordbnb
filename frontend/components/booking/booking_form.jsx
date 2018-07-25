@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
 
@@ -95,8 +96,7 @@ class BookingForm extends React.Component {
        location_id: this.state.location_id,
        guest_id: this.state.guest_id.id,
      }
-     this.props.createBooking(submission);
-     // .then(() => this.props.history.push(`/users/${this.state.guest_id}`));
+     this.props.createBooking(submission).then(() => this.props.history.push(`/users/${this.state.guest_id}`));
    }
 
   update(field) {
@@ -162,4 +162,4 @@ class BookingForm extends React.Component {
 
 }
 
-export default BookingForm;
+export default withRouter(BookingForm);
