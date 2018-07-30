@@ -15,7 +15,7 @@ const bookingReducer = (state = {}, action) => {
     case RECEIVE_LOCATION:
       return merge({}, state, action.payload.bookings)
     case RECEIVE_BOOKING:
-      return merge({}, state, {[action.payload.booking.id]: action.payload.booking})
+      return merge({}, state, {[action.payload.booking.id]: action.payload})
     case DELETE_BOOKING:
       let newState = merge({}, state);
       delete newState[action.booking.booking.id];

@@ -4,7 +4,9 @@ import BookingIndexItem from './booking_index_item';
 class BookingIndex extends React.Component {
   componentDidMount() {
     debugger
+    console.log(this.props.currentUser);
     this.props.fetchBookings(this.props.currentUser)
+    console.log("hit");
   }
 
   render() {
