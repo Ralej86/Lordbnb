@@ -3,11 +3,12 @@ import BookingIndexItem from './booking_index_item';
 
 class BookingIndex extends React.Component {
   componentDidMount() {
+    debugger
     this.props.fetchBookings(this.props.currentUser)
   }
 
   render() {
-    // debugger
+    debugger
     if (this.props.bookings.length < 1) {
       return (
         <div className="no-bookings">
